@@ -1,21 +1,30 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle } from 'lucide-react';
+import {motion} from 'framer-motion';
+import {CheckCircle, Github, Linkedin, Mail, MapPin, Phone, Send} from 'lucide-react';
+import {useState} from 'react';
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
+    const [
+        formData,
+        setFormData,
+    ] = useState({
         name: '',
         email: '',
-        message: ''
+        message: '',
     });
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [
+        isSubmitting,
+        setIsSubmitting,
+    ] = useState(false);
+    const [
+        isSubmitted,
+        setIsSubmitted,
+    ] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({
+        const {name, value} = e.target;
+        setFormData((prev) => ({
             ...prev,
-            [name]: value
+            [name]: value,
         }));
     };
 
@@ -24,7 +33,7 @@ const Contact = () => {
         setIsSubmitting(true);
 
         // Simulate form submission
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise((resolve) => setTimeout(resolve, 2000));
 
         setIsSubmitting(false);
         setIsSubmitted(true);
@@ -32,7 +41,7 @@ const Contact = () => {
         // Reset form after 3 seconds
         setTimeout(() => {
             setIsSubmitted(false);
-            setFormData({ name: '', email: '', message: '' });
+            setFormData({name: '', email: '', message: ''});
         }, 3000);
     };
 
@@ -41,33 +50,33 @@ const Contact = () => {
             icon: <Mail className="w-6 h-6" />,
             title: 'Email',
             value: 'jobs.padalkar.sarang@gmail.com',
-            link: 'mailto:jobs.padalkar.sarang@gmail.com'
+            link: 'mailto:jobs.padalkar.sarang@gmail.com',
         },
         {
             icon: <Phone className="w-6 h-6" />,
             title: 'Phone',
             value: '+1 (555) 123-4567',
-            link: 'tel:+15551234567'
+            link: 'tel:+15551234567',
         },
         {
             icon: <MapPin className="w-6 h-6" />,
             title: 'Location',
             value: 'McKinney, TX',
-            link: null
-        }
+            link: null,
+        },
     ];
 
     const socialLinks = [
         {
             name: 'GitHub',
             url: 'https://github.com/sarangspadalkar',
-            icon: <Github className="w-6 h-6" />
+            icon: <Github className="w-6 h-6" />,
         },
         {
             name: 'LinkedIn',
             url: 'https://www.linkedin.com/in/sarang-padalkar/',
-            icon: <Linkedin className="w-6 h-6" />
-        }
+            icon: <Linkedin className="w-6 h-6" />,
+        },
     ];
 
     return (
@@ -76,9 +85,9 @@ const Contact = () => {
             <section className="section-padding bg-gradient-to-br from-primary-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
                 <div className="max-w-4xl mx-auto text-center">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                        initial={{opacity: 0, y: 20}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{duration: 0.6}}
                     >
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
                             Get In Touch
@@ -96,10 +105,10 @@ const Contact = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         {/* Contact Form */}
                         <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6 }}
-                            viewport={{ once: true }}
+                            initial={{opacity: 0, x: -20}}
+                            whileInView={{opacity: 1, x: 0}}
+                            transition={{duration: 0.6}}
+                            viewport={{once: true}}
                         >
                             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                                 Send a Message
@@ -107,8 +116,8 @@ const Contact = () => {
 
                             {isSubmitted ? (
                                 <motion.div
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    animate={{ opacity: 1, scale: 1 }}
+                                    initial={{opacity: 0, scale: 0.9}}
+                                    animate={{opacity: 1, scale: 1}}
                                     className="card p-8 text-center"
                                 >
                                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
@@ -116,13 +125,17 @@ const Contact = () => {
                                         Message Sent!
                                     </h3>
                                     <p className="text-gray-600 dark:text-gray-300">
-                                        Thank you for reaching out. I'll get back to you within 24 hours.
+                                        Thank you for reaching out. I'll get back to you within 24
+                                        hours.
                                     </p>
                                 </motion.div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-6">
                                     <div>
-                                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                        <label
+                                            htmlFor="name"
+                                            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                                        >
                                             Name *
                                         </label>
                                         <input
@@ -138,7 +151,10 @@ const Contact = () => {
                                     </div>
 
                                     <div>
-                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                        <label
+                                            htmlFor="email"
+                                            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                                        >
                                             Email *
                                         </label>
                                         <input
@@ -154,7 +170,10 @@ const Contact = () => {
                                     </div>
 
                                     <div>
-                                        <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                        <label
+                                            htmlFor="message"
+                                            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                                        >
                                             Message *
                                         </label>
                                         <textarea
@@ -192,10 +211,10 @@ const Contact = () => {
 
                         {/* Contact Information */}
                         <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            viewport={{ once: true }}
+                            initial={{opacity: 0, x: 20}}
+                            whileInView={{opacity: 1, x: 0}}
+                            transition={{duration: 0.6, delay: 0.2}}
+                            viewport={{once: true}}
                         >
                             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                                 Contact Information
@@ -205,10 +224,10 @@ const Contact = () => {
                                 {contactInfo.map((info, index) => (
                                     <motion.div
                                         key={index}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.6, delay: index * 0.1 }}
-                                        viewport={{ once: true }}
+                                        initial={{opacity: 0, y: 20}}
+                                        whileInView={{opacity: 1, y: 0}}
+                                        transition={{duration: 0.6, delay: index * 0.1}}
+                                        viewport={{once: true}}
                                         className="flex items-center space-x-4"
                                     >
                                         <div className="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400">
@@ -247,10 +266,10 @@ const Contact = () => {
                                             href={social.url}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            initial={{ opacity: 0, scale: 0.8 }}
-                                            whileInView={{ opacity: 1, scale: 1 }}
-                                            transition={{ duration: 0.6, delay: index * 0.1 }}
-                                            viewport={{ once: true }}
+                                            initial={{opacity: 0, scale: 0.8}}
+                                            whileInView={{opacity: 1, scale: 1}}
+                                            transition={{duration: 0.6, delay: index * 0.1}}
+                                            viewport={{once: true}}
                                             className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-200"
                                             aria-label={social.name}
                                         >
@@ -262,10 +281,10 @@ const Contact = () => {
 
                             {/* Availability */}
                             <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, delay: 0.4 }}
-                                viewport={{ once: true }}
+                                initial={{opacity: 0, y: 20}}
+                                whileInView={{opacity: 1, y: 0}}
+                                transition={{duration: 0.6, delay: 0.4}}
+                                viewport={{once: true}}
                                 className="mt-8 card p-6"
                             >
                                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -290,10 +309,10 @@ const Contact = () => {
             <section className="section-padding bg-gray-50 dark:bg-gray-800">
                 <div className="max-w-4xl mx-auto">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
+                        initial={{opacity: 0, y: 20}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.6}}
+                        viewport={{once: true}}
                         className="text-center mb-12"
                     >
                         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
@@ -307,36 +326,34 @@ const Contact = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {[
                             {
-                                question: "What types of projects do you work on?",
-                                answer: "I specialize in backend development including APIs, microservices, database design, cloud infrastructure, and system architecture."
+                                question: 'What types of projects do you work on?',
+                                answer: 'I specialize in backend development including APIs, microservices, database design, cloud infrastructure, and system architecture.',
                             },
                             {
                                 question: "What's your typical response time?",
-                                answer: "I aim to respond to all inquiries within 24 hours, often much sooner during business hours."
+                                answer: 'I aim to respond to all inquiries within 24 hours, often much sooner during business hours.',
                             },
                             {
-                                question: "Do you work remotely?",
-                                answer: "Yes, I'm comfortable working remotely and have experience collaborating with distributed teams across different time zones."
+                                question: 'Do you work remotely?',
+                                answer: "Yes, I'm comfortable working remotely and have experience collaborating with distributed teams across different time zones.",
                             },
                             {
                                 question: "What's your development process?",
-                                answer: "I follow agile methodologies with clear communication, regular updates, and iterative development to ensure project success."
-                            }
+                                answer: 'I follow agile methodologies with clear communication, regular updates, and iterative development to ensure project success.',
+                            },
                         ].map((faq, index) => (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                viewport={{ once: true }}
+                                initial={{opacity: 0, y: 20}}
+                                whileInView={{opacity: 1, y: 0}}
+                                transition={{duration: 0.6, delay: index * 0.1}}
+                                viewport={{once: true}}
                                 className="card p-6"
                             >
                                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
                                     {faq.question}
                                 </h3>
-                                <p className="text-gray-600 dark:text-gray-300">
-                                    {faq.answer}
-                                </p>
+                                <p className="text-gray-600 dark:text-gray-300">{faq.answer}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -346,4 +363,4 @@ const Contact = () => {
     );
 };
 
-export default Contact; 
+export default Contact;

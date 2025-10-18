@@ -1,22 +1,25 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon } from 'lucide-react';
+import {Menu, Moon, Sun, X} from 'lucide-react';
+import {useState} from 'react';
+import {Link, useLocation} from 'react-router-dom';
 
 interface NavbarProps {
     darkMode: boolean;
     setDarkMode: (darkMode: boolean) => void;
 }
 
-const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
-    const [isOpen, setIsOpen] = useState(false);
+const Navbar = ({darkMode, setDarkMode}: NavbarProps) => {
+    const [
+        isOpen,
+        setIsOpen,
+    ] = useState(false);
     const location = useLocation();
 
     const navItems = [
-        { name: 'Home', path: '/' },
-        { name: 'About', path: '/about' },
-        { name: 'Projects', path: '/projects' },
-        { name: 'Resume', path: '/resume' },
-        { name: 'Contact', path: '/contact' },
+        {name: 'Home', path: '/'},
+        {name: 'About', path: '/about'},
+        {name: 'Projects', path: '/projects'},
+        {name: 'Resume', path: '/resume'},
+        {name: 'Contact', path: '/contact'},
     ];
 
     const isActive = (path: string) => location.pathname === path;
@@ -30,7 +33,9 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
                         <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
                             <span className="text-white font-bold text-lg">S</span>
                         </div>
-                        <span className="text-xl font-bold text-gray-900 dark:text-white">Sarang Padalkar</span>
+                        <span className="text-xl font-bold text-gray-900 dark:text-white">
+                            Sarang Padalkar
+                        </span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -39,10 +44,11 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
                             <Link
                                 key={item.name}
                                 to={item.path}
-                                className={`text-sm font-medium transition-colors duration-200 ${isActive(item.path)
+                                className={`text-sm font-medium transition-colors duration-200 ${
+                                    isActive(item.path)
                                         ? 'text-primary-600 dark:text-primary-400'
                                         : 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400'
-                                    }`}
+                                }`}
                             >
                                 {item.name}
                             </Link>
@@ -85,10 +91,11 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
                                 <Link
                                     key={item.name}
                                     to={item.path}
-                                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${isActive(item.path)
+                                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                                        isActive(item.path)
                                             ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20'
                                             : 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-700'
-                                        }`}
+                                    }`}
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item.name}
@@ -102,4 +109,4 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
     );
 };
 
-export default Navbar; 
+export default Navbar;

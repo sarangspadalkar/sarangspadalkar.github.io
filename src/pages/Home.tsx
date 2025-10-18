@@ -1,29 +1,29 @@
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Code, Database, Cloud, Zap } from 'lucide-react';
+import {motion} from 'framer-motion';
+import {ArrowRight, Cloud, Code, Database, Zap} from 'lucide-react';
+import {Link} from 'react-router-dom';
 
 const Home = () => {
     const features = [
         {
             icon: <Code className="w-8 h-8" />,
             title: 'Scalable Architecture',
-            description: 'Designing robust backend systems that handle millions of requests'
+            description: 'Designing robust backend systems that handle millions of requests',
         },
         {
             icon: <Database className="w-8 h-8" />,
             title: 'Data Engineering',
-            description: 'Optimizing databases and data pipelines for performance'
+            description: 'Optimizing databases and data pipelines for performance',
         },
         {
             icon: <Cloud className="w-8 h-8" />,
             title: 'Cloud Infrastructure',
-            description: 'AWS, Docker, Kubernetes deployment and management'
+            description: 'AWS, Docker, Kubernetes deployment and management',
         },
         {
             icon: <Zap className="w-8 h-8" />,
             title: 'API Development',
-            description: 'Building RESTful and GraphQL APIs with best practices'
-        }
+            description: 'Building RESTful and GraphQL APIs with best practices',
+        },
     ];
 
     return (
@@ -33,9 +33,9 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center">
                         <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
+                            initial={{opacity: 0, y: 20}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{duration: 0.6}}
                         >
                             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
                                 I build scalable backend systems that{' '}
@@ -45,7 +45,8 @@ const Home = () => {
                             </h1>
                             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
                                 Senior Backend Developer with 10+ years of experience in designing,
-                                building, and maintaining high-performance systems that serve millions of users.
+                                building, and maintaining high-performance systems that serve
+                                millions of users.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link
@@ -71,10 +72,10 @@ const Home = () => {
             <section className="section-padding">
                 <div className="max-w-7xl mx-auto">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
+                        initial={{opacity: 0, y: 20}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.6}}
+                        viewport={{once: true}}
                         className="text-center mb-16"
                     >
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -90,10 +91,10 @@ const Home = () => {
                         {features.map((feature, index) => (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                viewport={{ once: true }}
+                                initial={{opacity: 0, y: 20}}
+                                whileInView={{opacity: 1, y: 0}}
+                                transition={{duration: 0.6, delay: index * 0.1}}
+                                viewport={{once: true}}
                                 className="card p-6 text-center hover:shadow-xl transition-shadow duration-300"
                             >
                                 <div className="text-primary-600 dark:text-primary-400 mb-4 flex justify-center">
@@ -115,10 +116,10 @@ const Home = () => {
             <section className="section-padding bg-primary-600 dark:bg-primary-700">
                 <div className="max-w-4xl mx-auto text-center">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
+                        initial={{opacity: 0, y: 20}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.6}}
+                        viewport={{once: true}}
                     >
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                             Ready to build something amazing?
@@ -140,4 +141,4 @@ const Home = () => {
     );
 };
 
-export default Home; 
+export default Home;

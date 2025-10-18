@@ -26,29 +26,34 @@ A professional, responsive multi-page portfolio website for a Senior Backend Dev
 ## 📋 Pages
 
 ### Home
+
 - Hero section with compelling headline
 - Feature highlights showcasing backend expertise
 - Call-to-action sections
 
 ### About
+
 - Professional bio and journey
 - Comprehensive tech stack breakdown
 - Key strengths and specializations
 - Experience summary with metrics
 
 ### Projects
+
 - Showcase of 6 major backend projects
 - Technology tags for each project
 - GitHub and demo links
 - Filter by technology or project type
 
 ### Resume
+
 - Professional experience timeline
 - Education and certifications
 - Technical skills organized by category
 - Downloadable PDF option
 
 ### Contact
+
 - Contact form with validation
 - Contact information and social links
 - FAQ section
@@ -66,23 +71,26 @@ A professional, responsive multi-page portfolio website for a Senior Backend Dev
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/sarangspadalkar/sarangspadalkar.github.io.git
 cd sarangspadalkar.github.io
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -115,13 +123,14 @@ The built files will be in the `dist` directory.
 ### GitHub Pages
 
 1. Add to `package.json`:
+
 ```json
 {
-  "homepage": "https://sarangspadalkar.github.io",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  }
+    "homepage": "https://sarangspadalkar.github.io",
+    "scripts": {
+        "deploy": "gh-pages -d dist",
+        "predeploy": "npm run build"
+    }
 }
 ```
 
@@ -193,4 +202,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Built with ❤️ using React, TypeScript, and TailwindCSS 
+Built with ❤️ using React, TypeScript, and TailwindCSS
