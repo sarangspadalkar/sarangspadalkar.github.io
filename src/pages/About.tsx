@@ -226,36 +226,6 @@ const About = () => {
                     </div>
                 </div>
             </section>
-
-            {/* Experience Summary */}
-            <section className="section-padding bg-primary-600 dark:bg-primary-700">
-                <div className="max-w-4xl mx-auto text-center">
-                    <motion.div
-                        initial={{opacity: 0, y: 20}}
-                        whileInView={{opacity: 1, y: 0}}
-                        transition={{duration: 0.6}}
-                        viewport={{once: true}}
-                    >
-                        <h2 className="text-3xl font-bold text-white mb-6">
-                            5+ Years of Backend Excellence
-                        </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <div className="text-center">
-                                <div className="text-4xl font-bold text-white mb-2">50+</div>
-                                <div className="text-primary-100">Projects Delivered</div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-4xl font-bold text-white mb-2">99.9%</div>
-                                <div className="text-primary-100">System Uptime</div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-4xl font-bold text-white mb-2">1M+</div>
-                                <div className="text-primary-100">Users Served</div>
-                            </div>
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
         </div>
     );
 };
