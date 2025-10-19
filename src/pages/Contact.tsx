@@ -1,5 +1,13 @@
 import {motion} from 'framer-motion';
-import {CheckCircle, Github, Linkedin, Mail, MapPin, Phone, Send} from 'lucide-react';
+import {
+    CheckCircle,
+    Github,
+    Linkedin,
+    Mail,
+    MapPin,
+    Phone,
+    Send,
+} from 'lucide-react';
 import {useState} from 'react';
 
 const Contact = () => {
@@ -20,7 +28,9 @@ const Contact = () => {
         setIsSubmitted,
     ] = useState(false);
 
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleInputChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    ) => {
         const {name, value} = e.target;
         setFormData((prev) => ({
             ...prev,
@@ -93,7 +103,8 @@ const Contact = () => {
                             Get In Touch
                         </h1>
                         <p className="text-xl text-gray-600 dark:text-gray-300">
-                            Ready to build something amazing? Let's discuss your project.
+                            Ready to build something amazing? Let's discuss your
+                            project.
                         </p>
                     </motion.div>
                 </div>
@@ -125,12 +136,15 @@ const Contact = () => {
                                         Message Sent!
                                     </h3>
                                     <p className="text-gray-600 dark:text-gray-300">
-                                        Thank you for reaching out. I'll get back to you within 24
-                                        hours.
+                                        Thank you for reaching out. I'll get
+                                        back to you within 24 hours.
                                     </p>
                                 </motion.div>
                             ) : (
-                                <form onSubmit={handleSubmit} className="space-y-6">
+                                <form
+                                    onSubmit={handleSubmit}
+                                    className="space-y-6"
+                                >
                                     <div>
                                         <label
                                             htmlFor="name"
@@ -226,7 +240,10 @@ const Contact = () => {
                                         key={index}
                                         initial={{opacity: 0, y: 20}}
                                         whileInView={{opacity: 1, y: 0}}
-                                        transition={{duration: 0.6, delay: index * 0.1}}
+                                        transition={{
+                                            duration: 0.6,
+                                            delay: index * 0.1,
+                                        }}
                                         viewport={{once: true}}
                                         className="flex items-center space-x-4"
                                     >
@@ -268,7 +285,10 @@ const Contact = () => {
                                             rel="noopener noreferrer"
                                             initial={{opacity: 0, scale: 0.8}}
                                             whileInView={{opacity: 1, scale: 1}}
-                                            transition={{duration: 0.6, delay: index * 0.1}}
+                                            transition={{
+                                                duration: 0.6,
+                                                delay: index * 0.1,
+                                            }}
                                             viewport={{once: true}}
                                             className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all duration-200"
                                             aria-label={social.name}
@@ -326,7 +346,8 @@ const Contact = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {[
                             {
-                                question: 'What types of projects do you work on?',
+                                question:
+                                    'What types of projects do you work on?',
                                 answer: 'I specialize in backend development including APIs, microservices, database design, cloud infrastructure, and system architecture.',
                             },
                             {
@@ -353,7 +374,9 @@ const Contact = () => {
                                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
                                     {faq.question}
                                 </h3>
-                                <p className="text-gray-600 dark:text-gray-300">{faq.answer}</p>
+                                <p className="text-gray-600 dark:text-gray-300">
+                                    {faq.answer}
+                                </p>
                             </motion.div>
                         ))}
                     </div>

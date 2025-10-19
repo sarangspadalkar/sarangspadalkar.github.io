@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { ExternalLink, Filter, Github } from 'lucide-react';
-import { useState } from 'react';
+import {motion} from 'framer-motion';
+import {ExternalLink, Filter, Github} from 'lucide-react';
+import {useState} from 'react';
 
 interface Project {
     id: number;
@@ -22,6 +22,41 @@ const Projects = () => {
     const projects: Project[] = [
         {
             id: 1,
+            title: 'AI-Powered Incoming Call Handler',
+            description:
+                'Developed and deployed an AI-driven voice call automation system using LiveKit for real-time audio streaming and OpenAI Realtime API for dynamic conversational AI responses. Designed a comprehensive pipeline for real-time intelligent call handling including lead capture and call summarization. Deployed scalable infrastructure using AWS CDK, achieving 35% increase in operational efficiency.',
+            technologies: [
+                'OpenAI Realtime API',
+                'LiveKit',
+                'AWS CDK',
+                'Node.js',
+                'TypeScript',
+            ],
+            githubUrl: 'https://github.com/sarangspadalkar/ai-call-handler',
+            demoUrl: 'https://ai-calls-demo.example.com',
+            category: 'backend',
+        },
+        {
+            id: 2,
+            title: 'Zapier OAuth Integration & Automation App',
+            description:
+                'Built a secure OAuth 2.0 and JWT-based authentication system as part of a comprehensive Zapier app integration, enabling users to safely connect third-party services. Published the app on the Zapier Platform with custom triggers, actions, and searches for workflow automation. Focused on user experience, security, and compliance with Zapier app publishing requirements, reducing unauthorized access incidents by 60%.',
+            technologies: [
+                'OAuth 2.0',
+                'JWT',
+                'Zapier Platform',
+                'Node.js',
+                'Express.js',
+                'PostgreSQL',
+                'REST APIs',
+                'Webhook Integration',
+            ],
+            githubUrl: 'https://github.com/sarangspadalkar/zapier-oauth-app',
+            demoUrl: 'https://zapier-app-demo.example.com',
+            category: 'api',
+        },
+        {
+            id: 3,
             title: 'E-Commerce Microservices Platform',
             description:
                 'Built a scalable e-commerce platform using microservices architecture. Handles 100K+ concurrent users with 99.9% uptime. Features include order processing, inventory management, payment integration, and real-time analytics.',
@@ -37,7 +72,7 @@ const Projects = () => {
             category: 'backend',
         },
         {
-            id: 2,
+            id: 4,
             title: 'Real-time Chat API',
             description:
                 'Developed a high-performance real-time chat system using WebSockets and Redis pub/sub. Supports 10K+ concurrent connections with message persistence and user presence tracking.',
@@ -53,7 +88,7 @@ const Projects = () => {
             category: 'api',
         },
         {
-            id: 3,
+            id: 5,
             title: 'Payment Gateway Integration',
             description:
                 'Built a secure payment processing system supporting multiple payment providers (Stripe, PayPal, Square). Features fraud detection, webhook handling, and transaction reconciliation.',
@@ -68,13 +103,16 @@ const Projects = () => {
             category: 'api',
         },
         {
-            id: 5,
+            id: 6,
             title: 'Kubernetes Cluster Management',
             description:
                 'Designed and implemented a multi-region Kubernetes cluster with automated scaling, monitoring, and disaster recovery. Reduced deployment time by 80% and improved resource utilization.',
             technologies: [
                 'Kubernetes',
+                'Terraform',
                 'AWS',
+                'Prometheus',
+                'Grafana',
             ],
             githubUrl: 'https://github.com/sarangspadalkar/k8s-cluster',
             category: 'infrastructure',
@@ -89,18 +127,18 @@ const Projects = () => {
         selectedFilter === 'all'
             ? projects
             : projects.filter(
-                (project) =>
-                    project.technologies.includes(selectedFilter) ||
-                    project.category === selectedFilter,
-            );
+                  (project) =>
+                      project.technologies.includes(selectedFilter) ||
+                      project.category === selectedFilter,
+              );
 
     const filterOptions = [
-        { value: 'all', label: 'All Projects' },
-        { value: 'backend', label: 'Backend Systems' },
-        { value: 'api', label: 'APIs' },
-        { value: 'infrastructure', label: 'Infrastructure' },
-        { value: 'database', label: 'Database' },
-        ...allTechnologies.map((tech) => ({ value: tech, label: tech })),
+        {value: 'all', label: 'All Projects'},
+        {value: 'backend', label: 'Backend Systems'},
+        {value: 'api', label: 'APIs'},
+        {value: 'infrastructure', label: 'Infrastructure'},
+        {value: 'database', label: 'Database'},
+        ...allTechnologies.map((tech) => ({value: tech, label: tech})),
     ];
 
     return (
@@ -109,9 +147,9 @@ const Projects = () => {
             <section className="section-padding bg-gradient-to-br from-primary-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
                 <div className="max-w-4xl mx-auto text-center">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                        initial={{opacity: 0, y: 20}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{duration: 0.6}}
                     >
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
                             My Projects
@@ -127,10 +165,10 @@ const Projects = () => {
             <section className="section-padding bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
                 <div className="max-w-6xl mx-auto">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
+                        initial={{opacity: 0, y: 20}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.6}}
+                        viewport={{once: true}}
                         className="flex flex-col sm:flex-row items-center justify-between gap-4"
                     >
                         <div className="flex items-center gap-2">
@@ -144,10 +182,11 @@ const Projects = () => {
                                 <button
                                     key={option.value}
                                     onClick={() => setSelectedFilter(option.value)}
-                                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${selectedFilter === option.value
-                                        ? 'bg-primary-600 text-white'
-                                        : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
-                                        }`}
+                                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
+                                        selectedFilter === option.value
+                                            ? 'bg-primary-600 text-white'
+                                            : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                                    }`}
                                 >
                                     {option.label}
                                 </button>
@@ -164,10 +203,10 @@ const Projects = () => {
                         {filteredProjects.map((project, index) => (
                             <motion.div
                                 key={project.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                viewport={{ once: true }}
+                                initial={{opacity: 0, y: 20}}
+                                whileInView={{opacity: 1, y: 0}}
+                                transition={{duration: 0.6, delay: index * 0.1}}
+                                viewport={{once: true}}
                                 className="card p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                             >
                                 <div className="flex justify-between items-start mb-4">
@@ -220,8 +259,8 @@ const Projects = () => {
 
                     {filteredProjects.length === 0 && (
                         <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
+                            initial={{opacity: 0}}
+                            animate={{opacity: 1}}
                             className="text-center py-16"
                         >
                             <p className="text-lg text-gray-600 dark:text-gray-300">
@@ -237,10 +276,10 @@ const Projects = () => {
             <section className="section-padding bg-gray-50 dark:bg-gray-800">
                 <div className="max-w-4xl mx-auto text-center">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
+                        initial={{opacity: 0, y: 20}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.6}}
+                        viewport={{once: true}}
                     >
                         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
                             Interested in working together?

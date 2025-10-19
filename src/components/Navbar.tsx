@@ -31,7 +31,9 @@ const Navbar = ({darkMode, setDarkMode}: NavbarProps) => {
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-2">
                         <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                            <span className="text-white font-bold text-lg">S</span>
+                            <span className="text-white font-bold text-lg">
+                                S
+                            </span>
                         </div>
                         <span className="text-xl font-bold text-gray-900 dark:text-white">
                             Sarang Padalkar
@@ -60,7 +62,11 @@ const Navbar = ({darkMode, setDarkMode}: NavbarProps) => {
                             className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200"
                             aria-label="Toggle dark mode"
                         >
-                            {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                            {darkMode ? (
+                                <Sun className="w-5 h-5" />
+                            ) : (
+                                <Moon className="w-5 h-5" />
+                            )}
                         </button>
                     </div>
 
@@ -71,14 +77,22 @@ const Navbar = ({darkMode, setDarkMode}: NavbarProps) => {
                             className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200"
                             aria-label="Toggle dark mode"
                         >
-                            {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                            {darkMode ? (
+                                <Sun className="w-5 h-5" />
+                            ) : (
+                                <Moon className="w-5 h-5" />
+                            )}
                         </button>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200"
                             aria-label="Toggle menu"
                         >
-                            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+                            {isOpen ? (
+                                <X className="w-5 h-5" />
+                            ) : (
+                                <Menu className="w-5 h-5" />
+                            )}
                         </button>
                     </div>
                 </div>

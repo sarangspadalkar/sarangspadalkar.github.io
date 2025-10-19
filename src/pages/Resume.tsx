@@ -175,8 +175,8 @@ const Resume = () => {
                             Resume
                         </h1>
                         <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                            Senior Backend Developer with 10+ years of experience in scalable system
-                            design
+                            Senior Backend Developer with 10+ years of
+                            experience in scalable system design
                         </p>
                         <button className="btn-primary inline-flex items-center">
                             <Download className="mr-2 w-5 h-5" />
@@ -207,7 +207,10 @@ const Resume = () => {
                                     key={job.id}
                                     initial={{opacity: 0, y: 20}}
                                     whileInView={{opacity: 1, y: 0}}
-                                    transition={{duration: 0.6, delay: index * 0.1}}
+                                    transition={{
+                                        duration: 0.6,
+                                        delay: index * 0.1,
+                                    }}
                                     viewport={{once: true}}
                                     className="card p-6"
                                 >
@@ -233,9 +236,11 @@ const Resume = () => {
                                     </div>
 
                                     <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 mb-4 space-y-1">
-                                        {job.description.map((item, itemIndex) => (
-                                            <li key={itemIndex}>{item}</li>
-                                        ))}
+                                        {job.description.map(
+                                            (item, itemIndex) => (
+                                                <li key={itemIndex}>{item}</li>
+                                            ),
+                                        )}
                                     </ul>
 
                                     <div className="flex flex-wrap gap-2">
@@ -283,7 +288,10 @@ const Resume = () => {
                                         key={category}
                                         initial={{opacity: 0, y: 20}}
                                         whileInView={{opacity: 1, y: 0}}
-                                        transition={{duration: 0.6, delay: index * 0.1}}
+                                        transition={{
+                                            duration: 0.6,
+                                            delay: index * 0.1,
+                                        }}
                                         viewport={{once: true}}
                                         className="card p-6"
                                     >
@@ -391,7 +399,8 @@ const Resume = () => {
                             Ready to work together?
                         </h2>
                         <p className="text-xl text-primary-100 mb-8">
-                            Let's discuss how my experience can benefit your project.
+                            Let's discuss how my experience can benefit your
+                            project.
                         </p>
                         <a
                             href="/contact"

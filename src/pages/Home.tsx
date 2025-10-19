@@ -7,12 +7,14 @@ const Home = () => {
         {
             icon: <Code className="w-8 h-8" />,
             title: 'Scalable Architecture',
-            description: 'Designing robust backend systems that handle millions of requests',
+            description:
+                'Designing robust backend systems that handle millions of requests',
         },
         {
             icon: <Database className="w-8 h-8" />,
             title: 'Data Engineering',
-            description: 'Optimizing databases and data pipelines for performance',
+            description:
+                'Optimizing databases and data pipelines for performance',
         },
         {
             icon: <Cloud className="w-8 h-8" />,
@@ -22,7 +24,8 @@ const Home = () => {
         {
             icon: <Zap className="w-8 h-8" />,
             title: 'API Development',
-            description: 'Building RESTful and GraphQL APIs with best practices',
+            description:
+                'Building RESTful and GraphQL APIs with best practices',
         },
     ];
 
@@ -44,8 +47,9 @@ const Home = () => {
                                 </span>
                             </h1>
                             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-                                Senior Backend Developer with 10+ years of experience in designing,
-                                building, and maintaining high-performance systems that serve
+                                Senior Backend Developer with 10+ years of
+                                experience in designing, building, and
+                                maintaining high-performance systems that serve
                                 millions of users.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -82,8 +86,8 @@ const Home = () => {
                             What I Do Best
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                            Specializing in backend development with a focus on scalability,
-                            performance, and reliability.
+                            Specializing in backend development with a focus on
+                            scalability, performance, and reliability.
                         </p>
                     </motion.div>
 
@@ -125,7 +129,8 @@ const Home = () => {
                             Ready to build something amazing?
                         </h2>
                         <p className="text-xl text-primary-100 mb-8">
-                            Let's discuss how I can help bring your backend vision to life.
+                            Let's discuss how I can help bring your backend
+                            vision to life.
                         </p>
                         <Link
                             to="/contact"
