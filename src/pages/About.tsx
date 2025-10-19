@@ -9,7 +9,6 @@ const About = () => {
                 'Node.js',
                 'Python',
                 'Go',
-                'Java',
                 'TypeScript',
             ],
         },

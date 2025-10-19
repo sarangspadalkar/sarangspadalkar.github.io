@@ -155,7 +155,8 @@ const Projects = () => {
                             My Projects
                         </h1>
                         <p className="text-xl text-gray-600 dark:text-gray-300">
-                            Showcasing backend systems that power real-world applications
+                            Showcasing backend systems that power real-world
+                            applications
                         </p>
                     </motion.div>
                 </div>
@@ -181,7 +182,9 @@ const Projects = () => {
                             {filterOptions.map((option) => (
                                 <button
                                     key={option.value}
-                                    onClick={() => setSelectedFilter(option.value)}
+                                    onClick={() =>
+                                        setSelectedFilter(option.value)
+                                    }
                                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                                         selectedFilter === option.value
                                             ? 'bg-primary-600 text-white'
@@ -264,8 +267,8 @@ const Projects = () => {
                             className="text-center py-16"
                         >
                             <p className="text-lg text-gray-600 dark:text-gray-300">
-                                No projects found with the selected filter. Try a different filter
-                                option.
+                                No projects found with the selected filter. Try
+                                a different filter option.
                             </p>
                         </motion.div>
                     )}
@@ -285,10 +288,13 @@ const Projects = () => {
                             Interested in working together?
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                            Let's discuss how I can help build scalable backend solutions for your
-                            project.
+                            Let's discuss how I can help build scalable backend
+                            solutions for your project.
                         </p>
-                        <a href="/contact" className="btn-primary inline-flex items-center">
+                        <a
+                            href="/contact"
+                            className="btn-primary inline-flex items-center"
+                        >
                             Get In Touch
                             <ExternalLink className="ml-2 w-5 h-5" />
                         </a>

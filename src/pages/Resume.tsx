@@ -58,8 +58,6 @@ const Resume = () => {
                 'Collaborated with cross-functional teams in agile environment',
             ],
             technologies: [
-                'Java',
-                'Spring Boot',
                 'MySQL',
                 'Redis',
                 'Docker',
@@ -126,7 +124,6 @@ const Resume = () => {
             'Node.js',
             'Python',
             'Go',
-            'Java',
             'TypeScript',
             'JavaScript',
         ],
@@ -155,7 +152,6 @@ const Resume = () => {
         'Tools & Frameworks': [
             'Express.js',
             'Django',
-            'Spring Boot',
             'Socket.io',
             'Apache Kafka',
         ],
