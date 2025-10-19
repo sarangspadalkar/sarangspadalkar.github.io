@@ -1,0 +1,99 @@
+name: CI
+
+on:
+    push:
+        branches: ['*']
+    pull_request:
+        branches: ['main', 'master']
+
+jobs:
+    lint-and-test:
+        name: Lint, Type Check & Build
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '18'
+                  cache: 'npm'
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Check formatting
+              run: npm run format:check
+
+            - name: Lint code
+              run: npm run lint
+
+            - name: Type check
+              run: npx tsc --noEmit
+
+            - name: Build project
+              run: npm run build
+
+            - name: Upload build artifacts
+              uses: actions/upload-artifact@v4
+              with:
+                  name: dist
+                  path: dist/
+                  retention-days: 1
+
+    format:
+        name: Auto-format Code
+        runs-on: ubuntu-latest
+        if: github.event_name == 'push'
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '18'
+                  cache: 'npm'
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Check formatting
+              id: format-check
+              run: npm run format:check
+
+            - name: Format code
+              if: steps.format-check.outcome == 'failure'
+              run: npm run format
+
+            - name: Check for changes
+              id: changes
+              run: |
+                  if [ -n "$(git status --porcelain)" ]; then
+                      echo "has-changes=true" >> $GITHUB_OUTPUT
+                  else
+                      echo "has-changes=false" >> $GITHUB_OUTPUT
+                  fi
+
+            - name: Commit changes
+              if: steps.changes.outputs.has-changes == 'true'
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  git add .
+                  git commit -m " Auto-format code with Prettier [skip ci]"
+                  git push
+
+            - name: Summary
+              if: steps.changes.outputs.has-changes == 'true'
+              run: |
+                  echo "✅ Code has been automatically formatted and committed"
+            - name: Summary
+              if: steps.changes.outputs.has-changes == 'false'
+              run: |
+                  echo "✅ Code is already properly formatted"
