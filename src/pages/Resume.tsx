@@ -89,33 +89,33 @@ const Resume = () => {
     const education = [
         {
             degree: 'Master of Science in Computer Science',
-            school: 'Stanford University',
-            period: '2014 - 2016',
-            location: 'Stanford, CA',
+            school: 'University of Charlotte at North Carolina',
+            period: '2019 - 2021',
+            location: 'Charlotte, NC',
         },
         {
             degree: 'Bachelor of Science in Computer Engineering',
-            school: 'University of California, Berkeley',
-            period: '2010 - 2014',
-            location: 'Berkeley, CA',
+            school: 'University of Pune',
+            period: '2012 - 2016',
+            location: 'Pune, India',
         },
     ];
 
     const certifications = [
         {
-            name: 'AWS Certified Solutions Architect',
-            issuer: 'Amazon Web Services',
-            year: '2023',
+            name: 'Specialization in Architecting with Google Compute Engine',
+            issuer: 'Coursera',
+            year: '2020',
         },
         {
-            name: 'Kubernetes Administrator (CKA)',
-            issuer: 'Cloud Native Computing Foundation',
-            year: '2022',
-        },
-        {
-            name: 'PostgreSQL Performance Tuning',
-            issuer: 'PostgreSQL University',
+            name: 'Docker and Kubernetes: The Complete Guide',
+            issuer: 'Udemy',
             year: '2021',
+        },
+        {
+            name: 'Front-End Web UI Frameworks and Tools: Bootstrap 4',
+            issuer: 'Coursera',
+            year: '2020',
         },
     ];
 
