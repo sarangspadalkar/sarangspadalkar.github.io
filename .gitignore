@@ -1,2 +1,8 @@
 node_modules
-package-lock.json
+.next
+out
+.DS_Store
+*.pem
+.env*.local
+.debug
+vercel.json
