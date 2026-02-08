@@ -7,7 +7,7 @@ export const site = {
   tagline: 'Building Scalable Distributed Systems & AI-Driven Infrastructure',
   role: "Senior Software Engineer",
   company: "Jill's Office",
-  email: 'mailto:spadalka@uncc.edu',
+  email: 'mailto:jobs.padalkar.sarang@gmail.com',
   linkedin: 'https://www.linkedin.com/in/sarang-padalkar/',
   github: 'https://github.com/sarangspadalkar',
 } as const;
@@ -34,23 +34,29 @@ export const experience = [
     company: "Jill's Office",
     companyUrl: 'https://www.jillsoffice.com/',
     role: 'Senior Software Engineer',
-    period: 'Jun 2021 – Present',
+    period: 'Jun 2021 - Present',
+    location: 'Ogden, Utah',
     metrics: [
       '30% improvement in API performance',
-      '90% reduction in environment setup time',
+      '40% increase in deployment frequency',
+      '35% gain in operational efficiency (AI solutions)',
+      '60% reduction in unauthorized access incidents',
+      '90% reduction in infrastructure setup time',
     ],
     highlights: [
-      'Implemented full-stack features using TypeScript, GraphQL, and Node.js.',
-      'Designed and architected AWS infrastructure for staging with CDK/CloudFormation.',
-      'Built CI/CD pipelines with GitHub Actions.',
-      'Integrated Mocha testing framework and improved test coverage.',
+      'Led a team of engineers to design and develop microservices architecture using Node.js and GraphQL, achieving a 30% improvement in API performance and scalability.',
+      'Delivered end-to-end software solutions by automating deployment pipelines with AWS CodePipeline, increasing deployment frequency by 40%.',
+      'Designed and deployed AI-powered solutions, including an AI-driven call automation system leveraging OpenAI APIs and AWS CDK, increasing operational efficiency by 35%.',
+      'Implemented secure authentication systems with OAuth 2.0 and JWT, enhancing API security and reducing unauthorized access incidents by 60%.',
+      'Championed the adoption of Infrastructure as Code (IaC) to streamline provisioning, cutting infrastructure setup time by 90% and reducing deployment errors.',
+      'Mentored junior engineers, fostering a culture of excellence and ensuring adherence to best practices in software development and DevOps.',
     ],
   },
   {
     company: 'Discovery Education',
     companyUrl: 'https://www.discoveryeducation.com/',
     role: 'Jr. Full Stack Developer Intern',
-    period: 'Jul 2020 – Aug 2020',
+    period: 'Jul 2020 - Aug 2020',
     metrics: [
       'Delivered full-stack MEAN application for data visualization',
       'Integrated third-party APIs for inventory and license tracking',
@@ -66,7 +72,7 @@ export const experience = [
     company: 'Accenture',
     companyUrl: 'https://www.accenture.com/',
     role: 'Application Development Analyst',
-    period: 'Nov 2016 – Jun 2019',
+    period: 'Nov 2016 - Jun 2019',
     metrics: [
       'Saved 30 hours of team time daily via automation',
       'CMT APEX Award for Delivery & Profitability',
@@ -112,7 +118,7 @@ export const featuredProjects = [
     id: 'zapier-integration',
     title: 'Custom Zapier Integration',
     description:
-      'OAuth 2.0–based integration with webhooks for bi-directional sync and event-driven automation with external platforms.',
+      'OAuth 2.0-based integration with webhooks for bi-directional sync and event-driven automation with external platforms.',
     tech: ['OAuth 2.0', 'Webhooks', 'Node.js', 'REST'],
     href: '#',
     icon: 'Plug',
@@ -134,6 +140,6 @@ export const contact = {
   links: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/sarang-padalkar/', icon: 'Linkedin' },
     { label: 'GitHub', href: 'https://github.com/sarangspadalkar', icon: 'Github' },
-    { label: 'Email', href: 'mailto:spadalka@uncc.edu', icon: 'Mail' },
+    { label: 'Email', href: 'mailto:jobs.padalkar.sarang@gmail.com', icon: 'Mail' },
   ],
 } as const;
