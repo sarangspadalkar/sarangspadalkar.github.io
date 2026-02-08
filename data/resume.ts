@@ -91,6 +91,15 @@ export const featuredProjects = [
     icon: 'Users',
   },
   {
+    id: 'hangman-game',
+    title: 'Hangman Game',
+    description:
+      'Classic Hangman guessing US state and territory names. Built with React 18 and TypeScript: 6 lives, QWERTY keyboard (click or type), win/lose screens, and accessible focus styles and reduced motion.',
+    tech: ['React 18', 'TypeScript', 'Create React App', 'CSS Modules'],
+    href: 'https://sarangspadalkar.github.io/hangman-game/',
+    icon: 'Gamepad2',
+  },
+  {
     id: 'ai-media-pipeline',
     title: 'AI Media Pipeline',
     description:

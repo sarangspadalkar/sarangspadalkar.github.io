@@ -2,10 +2,10 @@
 
 import { featuredProjects } from '@/data/resume';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Workflow, Plug, Calendar, Users, ArrowUpRight } from 'lucide-react';
+import { Workflow, Plug, Calendar, Users, Gamepad2, ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 
-const iconMap = { Workflow, Plug, Calendar, Users };
+const iconMap = { Workflow, Plug, Calendar, Users, Gamepad2 };
 
 export function FeaturedProjects() {
   return (
