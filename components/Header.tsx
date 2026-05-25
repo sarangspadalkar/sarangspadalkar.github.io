@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 
 const navLinks = [
-  { href: '#hero', label: 'Home' },
+  { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
   { href: '#experience', label: 'Experience' },
   { href: '#work', label: 'Projects' },

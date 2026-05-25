@@ -4,27 +4,45 @@
 
 export const site = {
   name: 'Sarang Padalkar',
-  tagline: 'Building Scalable Distributed Systems & AI-Driven Infrastructure',
-  role: "Senior Software Engineer",
+  tagline: 'Backend, cloud, and AI-powered automation',
+  role: 'Senior Software Engineer',
   company: "Jill's Office",
   email: 'mailto:jobs.padalkar.sarang@gmail.com',
   linkedin: 'https://www.linkedin.com/in/sarang-padalkar/',
   github: 'https://github.com/sarangspadalkar',
+  resume:
+    'https://drive.google.com/file/d/1DgwQbDAIRYH1TZ_FFHmfy7_Mp_b8PJYz/view?usp=sharing',
+  chess: 'https://www.chess.com/member/nimbus_oblivate',
 } as const;
 
 export const hero = {
-  headline: "Hi, I'm Sarang Padalkar",
-  subheadline: "Building Scalable Distributed Systems & AI-Driven Infrastructure",
+  headline: 'I build backends that scale, automate, and stay secure.',
+  subheadline:
+    "Senior software engineer specializing in event-driven backends, cloud infrastructure, and AI-powered automation.",
   roleCompany: "Senior Software Engineer at Jill's Office",
-  cta: "View my work",
+  cta: 'View my work',
+} as const;
+
+export const about = {
+  title: 'About Me',
+  paragraphs: [
+    "I'm a senior software engineer based in Dallas, TX, currently at Jill's Office. I've spent the last few years designing event-driven backends, building AI-powered voice automation on LiveKit and OpenAI's Realtime API, and championing infrastructure-as-code across identity, networking, and compute.",
+    'My work tends to live at the intersection of backend systems, cloud infrastructure, and developer enablement — migrating monoliths to microservices, automating manual ops, and shipping platform features that unlock real product outcomes. I care about clean bounded contexts, secure-by-default systems, and code review cultures that make teams faster.',
+  ],
+  facts: [
+    { label: 'Location', value: 'Dallas, TX' },
+    { label: 'Experience', value: '8+ Years' },
+    { label: 'Focus', value: 'Backend, Cloud & AI Systems' },
+    { label: 'Current Role', value: "Senior Software Engineer at Jill's Office" },
+  ],
 } as const;
 
 export const skillsByCategory = {
-  Languages: ['TypeScript', 'JavaScript', 'Node.js', 'Python', 'GraphQL'],
-  'Cloud / AWS': ['Lambda', 'SQS', 'S3', 'API Gateway', 'CDK', 'CloudFormation', 'EC2', 'IAM'],
-  'Backend / Microservices': ['REST', 'GraphQL', 'Event-Driven', 'Message Queues', 'Serverless'],
-  Databases: ['PostgreSQL', 'MongoDB', 'DynamoDB', 'Redis'],
-  DevOps: ['CI/CD', 'GitHub Actions', 'Docker', 'Linux', 'Infrastructure as Code'],
+  Backend: ['Node.js', 'TypeScript', 'JavaScript', 'Python', 'GraphQL', 'RESTful APIs', 'WebSockets'],
+  'Cloud & DevOps': ['AWS', 'GCP', 'Docker', 'Kubernetes', 'GitHub Actions', 'AWS CodePipeline', 'AWS CDK'],
+  Databases: ['PostgreSQL', 'MongoDB', 'Redis', 'Prisma', 'Mongoose'],
+  'Security & Identity': ['OAuth 2.0', 'AWS Cognito', 'Federated Identity', 'Google / Social IdPs', 'JWT'],
+  Tools: ['OpenAI API (Realtime / GPT-4)', 'LiveKit (WebRTC)', 'Twilio', 'Zapier Platform', 'AssemblyAI'],
 } as const;
 
 export type SkillCategory = keyof typeof skillsByCategory;
@@ -34,22 +52,64 @@ export const experience = [
     company: "Jill's Office",
     companyUrl: 'https://www.jillsoffice.com/',
     role: 'Senior Software Engineer',
-    period: 'Jun 2021 - Present',
-    location: 'Ogden, Utah',
+    period: 'Jan 2024 - Present',
+    location: 'Ogden, UT',
     metrics: [
-      '30% improvement in API performance',
-      '40% increase in deployment frequency',
-      '35% gain in operational efficiency (AI solutions)',
-      '60% reduction in unauthorized access incidents',
-      '90% reduction in infrastructure setup time',
+      '75% reduction in post-call wrap-up time',
+      '90% reduction in environment provisioning time',
+      '15,000+ legacy accounts migrated to AWS Cognito',
     ],
     highlights: [
-      'Led a team of engineers to design and develop microservices architecture using Node.js and GraphQL, achieving a 30% improvement in API performance and scalability.',
-      'Delivered end-to-end software solutions by automating deployment pipelines with AWS CodePipeline, increasing deployment frequency by 40%.',
-      'Designed and deployed AI-powered solutions, including an AI-driven call automation system leveraging OpenAI APIs and AWS CDK, increasing operational efficiency by 35%.',
-      'Implemented secure authentication systems with OAuth 2.0 and JWT, enhancing API security and reducing unauthorized access incidents by 60%.',
-      'Championed the adoption of Infrastructure as Code (IaC) to streamline provisioning, cutting infrastructure setup time by 90% and reducing deployment errors.',
-      'Mentored junior engineers, fostering a culture of excellence and ensuring adherence to best practices in software development and DevOps.',
+      "Engineered an asynchronous AI voice automation engine using LiveKit and OpenAI's Realtime API, orchestrating event-driven WebRTC streams to handle high-concurrency voice processing seamlessly.",
+      'Migrated 15,000+ legacy user accounts from database-stored credentials to AWS Cognito, implementing OAuth 2.0 and Google SSO via custom REST endpoints to eliminate credential-maintenance security liabilities.',
+      'Built an event-driven off-hours dispatch engine on AWS SQS and ECS Fargate to process multi-tiered SMS/Voice escalation queues — a critical feature that directly unlocked customer acquisition in enterprise HVAC and plumbing markets.',
+      'Designed an end-to-end automated transcription pipeline using Twilio and AssemblyAI, with secure S3 presigned URLs for media transfer, reducing post-call wrap-up times by ~75%.',
+      'Decoupled a legacy monolithic core into scalable microservices on Node.js and GraphQL, defining clear bounded contexts and data-ownership boundaries that drastically isolated blast radiuses and stabilized system reliability.',
+      'Championed the organizational adoption of Infrastructure as Code by introducing AWS CDK (TypeScript), automating identity and cloud infrastructure to cut environment provisioning time by 90%.',
+    ],
+    tags: [
+      'TypeScript',
+      'Node.js',
+      'GraphQL',
+      'LiveKit',
+      'OpenAI Realtime API',
+      'AWS CDK',
+      'AWS Cognito',
+      'AWS SQS',
+      'ECS Fargate',
+      'OAuth 2.0',
+      'Twilio',
+      'AssemblyAI',
+      'Microservices',
+    ],
+  },
+  {
+    company: "Jill's Office",
+    companyUrl: 'https://www.jillsoffice.com/',
+    role: 'Software Developer',
+    period: 'Jun 2021 - Dec 2023',
+    location: 'Ogden, UT',
+    metrics: [
+      '85% reduction in P99 API latency',
+      '40% faster release deployment frequency',
+    ],
+    highlights: [
+      'Migrated performance-critical backend endpoints from AWS Lambda to ECS Fargate, eliminating cold-start bottlenecks to slash P99 API latency by ~85% while permanently removing the compute cost of legacy cron-based "warmers."',
+      'Established automated CI/CD pipelines on AWS CodePipeline and CodeBuild, replacing manual local builds with automated Docker image generation and ECR publishing to accelerate release deployment frequency by 40%.',
+      'Integrated the OAuth 2.0 Google Calendar API into the core platform, enabling call center agents to query real-time external availability and eliminate manual appointment-setting friction.',
+      'Contributed to a rigorous code review culture and mentored incoming junior developers on backend system design patterns, secure token handling, and database optimization.',
+    ],
+    tags: [
+      'Node.js',
+      'TypeScript',
+      'GraphQL',
+      'AWS Lambda',
+      'ECS Fargate',
+      'Docker',
+      'AWS CodePipeline',
+      'AWS CodeBuild',
+      'OAuth 2.0',
+      'Google Calendar API',
     ],
   },
   {
@@ -57,109 +117,94 @@ export const experience = [
     companyUrl: 'https://www.discoveryeducation.com/',
     role: 'Jr. Full Stack Developer Intern',
     period: 'Jul 2020 - Aug 2020',
-    metrics: [
-      'Delivered full-stack MEAN application for data visualization',
-      'Integrated third-party APIs for inventory and license tracking',
-    ],
+    location: 'Charlotte, NC',
+    metrics: [],
     highlights: [
-      'Designed interactive Angular-based pages for internal tools.',
-      'Created RESTful API endpoints using Node.js and Azure Functions.',
-      'Developed full-stack MEAN app for processing and rendering data visually.',
-      'Integrated third-party APIs for license and inventory management.',
+      'Developed a full-stack MEAN web application that processed and rendered data visually for internal stakeholders.',
+      'Designed interactive web pages on Angular for an internal application.',
+      'Built RESTful API endpoints using Node.js and Azure Functions.',
+      'Integrated third-party APIs to track and maintain licenses across the inventory management system.',
+    ],
+    tags: [
+      'Angular',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'Azure Functions',
+      'REST APIs',
+      'MEAN Stack',
     ],
   },
   {
-    company: 'Accenture',
+    company: 'Accenture Solutions Pvt. Ltd.',
     companyUrl: 'https://www.accenture.com/',
-    role: 'Application Development Analyst',
+    role: 'Cloud Architect',
     period: 'Nov 2016 - Jun 2019',
+    location: 'Pune, India',
     metrics: [
-      'Saved 30 hours of team time daily via automation',
+      '30 hours/day of manual ops automated away',
       'CMT APEX Award for Delivery & Profitability',
     ],
     highlights: [
-      'Design, deploy and maintain enterprise-class security, network, and systems management applications within an AWS environment.',
-      'Institute infrastructure as code to launch fully functional stacks.',
-      'Automated mundane manual tasks using Linux scripting, which saved 30 hours of team\'s daily.',
-      'Recognized with the CMT APEX Award for Delivery & Profitability by Accenture.',
+      'Designed, implemented, and maintained all AWS infrastructure and services within a managed-service environment.',
+      'Instituted Infrastructure as Code, security automation, and automation of routine maintenance tasks.',
+      'Deployed Spacewalk to centrally patch all Linux EC2 instances across the AWS infrastructure.',
+      "Used Linux scripting to automate manual operational work, saving the team 30 hours of daily effort — recognized with the CMT APEX Award for Delivery & Profitability.",
+    ],
+    tags: [
+      'AWS',
+      'EC2',
+      'Infrastructure as Code',
+      'Security Automation',
+      'Spacewalk',
+      'Linux',
+      'Shell Scripting',
     ],
   },
 ] as const;
 
 export const featuredProjects = [
   {
-    id: 'riot',
-    title: 'RIOT — Running Is Our Therapy',
-    tools: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'EJS', 'express-validator'],
-    situation:
-      'Marathon and distance runners needed a central place to discover, create, and join running meetups (5K, 10K, Half Marathon, Full Marathon) and manage their connections.',
-    action:
-      'Built a full-stack meetup-style web application with browse/create/RSVP flows, session-based authentication, a "My Connections" dashboard, and input validation. Implemented MVC-style Express architecture and reusable validation middleware.',
-    result:
-      'Users can discover events by topic, create meetups with location and date/time, RSVP (Yes/No/Maybe), and manage saved connections in a responsive dark-themed UI.',
-    projectLink: 'https://running-is-our-therapy.herokuapp.com/',
-    icon: 'Users',
+    id: 'ai-call-automation',
+    title: 'AI-Driven Call Automation Engine',
+    tag: 'Production',
+    description:
+      "Integrated the OpenAI Realtime API for intelligent, low-latency handling of customer calls. Built the underlying infrastructure on AWS CDK and LiveKit to manage real-time WebRTC audio streams, ensuring high-concurrency voice processing with extreme responsiveness.",
+    stack: ['OpenAI Realtime API', 'LiveKit', 'AWS CDK', 'WebRTC', 'TypeScript'],
   },
   {
-    id: 'hangman-game',
-    title: 'Hangman Game',
-    tools: ['React 18', 'TypeScript', 'Create React App', 'CSS Modules'],
-    situation:
-      'Wanted a portable, accessible word game that could run in the browser and work well for all users, including those using keyboards and screen readers.',
-    action:
-      'Built a classic Hangman game guessing US state and territory names using React 18 and TypeScript. Implemented 6-lives logic, QWERTY keyboard (click or type), win/lose screens, and added focus styles, ARIA labels, and optional reduced motion.',
-    result:
-      'A deployable, accessible game with clear feedback (correct letters green, wrong red), end screen with answer and "Play again," and GitHub Pages deployment via GitHub Actions.',
-    projectLink: 'https://sarangspadalkar.github.io/hangman-game/',
-    icon: 'Gamepad2',
-  },
-  {
-    id: 'ai-media-pipeline',
-    title: 'AI Media Pipeline',
-    tools: ['AWS CDK', 'OpenAI', 'SQS', 'Lambda', 'S3'],
-    situation:
-      'Media assets needed to be processed at scale using AI (e.g., transcription, analysis) with reliable queuing and minimal operational overhead.',
-    action:
-      'Designed and implemented a serverless pipeline: ingest via S3, queue work with SQS, process with Lambda and OpenAI APIs, and store results. Defined infrastructure as code with AWS CDK.',
-    result:
-      'A scalable, event-driven pipeline that improves operational efficiency and can be extended for additional AI use cases without managing servers.',
-    projectLink: '#',
-    icon: 'Workflow',
+    id: 'federated-identity',
+    title: 'Federated Identity & Google Auth Integration',
+    tag: 'Production',
+    description:
+      'Architected a robust Identity Provider system using AWS Cognito and CDK, implementing Federated Identity for "Sign in with Google." Engineered the OAuth 2.0 Authorization Code Flow with JWT validation (issuer/audience checks) and secure, cross-domain HTTP-only cookie strategies.',
+    stack: ['AWS Cognito', 'AWS CDK', 'OAuth 2.0', 'JWT', 'Federated Identity'],
   },
   {
     id: 'zapier-integration',
-    title: 'Custom Zapier Integration',
-    tools: ['OAuth 2.0', 'Webhooks', 'Node.js', 'REST'],
-    situation:
-      'External platforms and internal systems needed bi-directional sync and event-driven automation without manual steps.',
-    action:
-      'Built a custom integration using OAuth 2.0 for secure authorization and webhooks for real-time events. Implemented Node.js services and REST APIs to handle sync and automation logic.',
-    result:
-      'Seamless connectivity with third-party tools, reduced manual work, and consistent data flow between systems.',
-    projectLink: '#',
-    icon: 'Plug',
+    title: 'Enterprise Zapier & Workflow Automation',
+    tag: 'Platform',
+    description:
+      'Designed a custom Zapier Platform integration from scratch in TypeScript using REST hooks. Built secure OAuth 2.0 flows for third-party authorization, custom Actions for triggering outbound calls, and Triggers for real-time data sync between the core backend and external CRMs.',
+    stack: ['Zapier Platform', 'TypeScript', 'REST Hooks', 'OAuth 2.0'],
   },
   {
     id: 'scheduling-system',
     title: 'Automated Scheduling System',
-    tools: ['Google Calendar API', 'Node.js', 'REST'],
-    situation:
-      'Teams needed to expose availability and support booking or scheduling without double-booking or manual calendar checks.',
-    action:
-      'Implemented calendar automation and scheduling logic using the Google Calendar API. Built Node.js services and REST endpoints for availability and booking flows.',
-    result:
-      'Automated availability resolution and booking, reducing back-and-forth and calendar errors.',
-    projectLink: '#',
-    icon: 'Calendar',
+    tag: 'Production',
+    description:
+      'Built a secure, automated scheduling workflow on the Google Calendar API and Node.js. Implemented OAuth 2.0 for API access and an event-driven system that reduced manual appointment-setting for call center staff by 50%, directly improving operational throughput.',
+    stack: ['Google Calendar API', 'Node.js', 'OAuth 2.0', 'Event-Driven'],
   },
 ] as const;
 
 export const contact = {
   title: 'Get in touch',
-  subtitle: 'Open to discussing backend, distributed systems, and platform engineering.',
+  subtitle:
+    'Open to discussing backend, distributed systems, identity, and AI-powered automation.',
   links: [
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/sarang-padalkar/', icon: 'Linkedin' },
-    { label: 'GitHub', href: 'https://github.com/sarangspadalkar', icon: 'Github' },
     { label: 'Email', href: 'mailto:jobs.padalkar.sarang@gmail.com', icon: 'Mail' },
+    { label: 'GitHub', href: 'https://github.com/sarangspadalkar', icon: 'Github' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/sarang-padalkar/', icon: 'Linkedin' },
   ],
 } as const;
