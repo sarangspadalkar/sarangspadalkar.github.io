@@ -67,6 +67,21 @@ export const experience = [
       'Decoupled a legacy monolithic core into scalable microservices on Node.js and GraphQL, defining clear bounded contexts and data-ownership boundaries that drastically isolated blast radiuses and stabilized system reliability.',
       'Championed the organizational adoption of Infrastructure as Code by introducing AWS CDK (TypeScript), automating identity and cloud infrastructure to cut environment provisioning time by 90%.',
     ],
+    tags: [
+      'TypeScript',
+      'Node.js',
+      'GraphQL',
+      'LiveKit',
+      'OpenAI Realtime API',
+      'AWS CDK',
+      'AWS Cognito',
+      'AWS SQS',
+      'ECS Fargate',
+      'OAuth 2.0',
+      'Twilio',
+      'AssemblyAI',
+      'Microservices',
+    ],
   },
   {
     company: "Jill's Office",
@@ -84,6 +99,18 @@ export const experience = [
       'Integrated the OAuth 2.0 Google Calendar API into the core platform, enabling call center agents to query real-time external availability and eliminate manual appointment-setting friction.',
       'Contributed to a rigorous code review culture and mentored incoming junior developers on backend system design patterns, secure token handling, and database optimization.',
     ],
+    tags: [
+      'Node.js',
+      'TypeScript',
+      'GraphQL',
+      'AWS Lambda',
+      'ECS Fargate',
+      'Docker',
+      'AWS CodePipeline',
+      'AWS CodeBuild',
+      'OAuth 2.0',
+      'Google Calendar API',
+    ],
   },
   {
     company: 'Discovery Education',
@@ -97,6 +124,15 @@ export const experience = [
       'Designed interactive web pages on Angular for an internal application.',
       'Built RESTful API endpoints using Node.js and Azure Functions.',
       'Integrated third-party APIs to track and maintain licenses across the inventory management system.',
+    ],
+    tags: [
+      'Angular',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'Azure Functions',
+      'REST APIs',
+      'MEAN Stack',
     ],
   },
   {
@@ -115,6 +151,15 @@ export const experience = [
       'Deployed Spacewalk to centrally patch all Linux EC2 instances across the AWS infrastructure.',
       "Used Linux scripting to automate manual operational work, saving the team 30 hours of daily effort — recognized with the CMT APEX Award for Delivery & Profitability.",
     ],
+    tags: [
+      'AWS',
+      'EC2',
+      'Infrastructure as Code',
+      'Security Automation',
+      'Spacewalk',
+      'Linux',
+      'Shell Scripting',
+    ],
   },
 ] as const;
 
@@ -122,80 +167,34 @@ export const featuredProjects = [
   {
     id: 'ai-call-automation',
     title: 'AI-Driven Call Automation Engine',
-    tools: ['OpenAI Realtime API', 'LiveKit', 'AWS CDK', 'WebRTC', 'TypeScript'],
-    situation:
-      'Customer calls required intelligent, low-latency handling that traditional IVR or callback systems could not deliver, especially under high concurrency.',
-    action:
-      'Integrated the OpenAI Realtime API to handle conversational intelligence in-stream, and built the underlying infrastructure on AWS CDK and LiveKit to manage real-time WebRTC audio streams end to end.',
-    result:
-      'A production voice-automation engine capable of high-concurrency call handling with extreme responsiveness, lifting operational efficiency materially.',
-    projectLink: '#',
-    icon: 'Workflow',
+    tag: 'Production',
+    description:
+      "Integrated the OpenAI Realtime API for intelligent, low-latency handling of customer calls. Built the underlying infrastructure on AWS CDK and LiveKit to manage real-time WebRTC audio streams, ensuring high-concurrency voice processing with extreme responsiveness.",
+    stack: ['OpenAI Realtime API', 'LiveKit', 'AWS CDK', 'WebRTC', 'TypeScript'],
   },
   {
     id: 'federated-identity',
     title: 'Federated Identity & Google Auth Integration',
-    tools: ['AWS Cognito', 'AWS CDK', 'OAuth 2.0', 'JWT', 'Federated Identity'],
-    situation:
-      'The platform needed enterprise-grade authentication with Single Sign-On for Google accounts and a secure, auditable identity layer.',
-    action:
-      'Architected an Identity Provider system using AWS Cognito and CDK, implementing Federated Identity for "Sign in with Google." Engineered the OAuth 2.0 Authorization Code Flow with JWT validation (issuer/audience checks) and secure cross-domain HTTP-only cookie strategies.',
-    result:
-      'A hardened IdP that supports federated sign-in, protects user sessions across domains, and reduces credential-management surface area for the rest of the platform.',
-    projectLink: '#',
-    icon: 'Plug',
+    tag: 'Production',
+    description:
+      'Architected a robust Identity Provider system using AWS Cognito and CDK, implementing Federated Identity for "Sign in with Google." Engineered the OAuth 2.0 Authorization Code Flow with JWT validation (issuer/audience checks) and secure, cross-domain HTTP-only cookie strategies.',
+    stack: ['AWS Cognito', 'AWS CDK', 'OAuth 2.0', 'JWT', 'Federated Identity'],
   },
   {
     id: 'zapier-integration',
     title: 'Enterprise Zapier & Workflow Automation',
-    tools: ['Zapier Platform', 'TypeScript', 'REST Hooks', 'OAuth 2.0'],
-    situation:
-      'Enterprise customers needed bi-directional sync between the core backend and external CRMs without engineering involvement for every workflow.',
-    action:
-      'Designed a custom Zapier Platform integration from scratch in TypeScript using REST hooks. Built secure OAuth 2.0 flows for third-party authorization, custom Actions for triggering outbound calls, and Triggers for real-time data synchronization.',
-    result:
-      'A self-serve integration layer that lets customers wire the platform into thousands of downstream tools — eliminating manual data movement and unlocking enterprise sales conversations.',
-    projectLink: '#',
-    icon: 'Plug',
+    tag: 'Platform',
+    description:
+      'Designed a custom Zapier Platform integration from scratch in TypeScript using REST hooks. Built secure OAuth 2.0 flows for third-party authorization, custom Actions for triggering outbound calls, and Triggers for real-time data sync between the core backend and external CRMs.',
+    stack: ['Zapier Platform', 'TypeScript', 'REST Hooks', 'OAuth 2.0'],
   },
   {
     id: 'scheduling-system',
     title: 'Automated Scheduling System',
-    tools: ['Google Calendar API', 'Node.js', 'OAuth 2.0', 'Event-Driven'],
-    situation:
-      'Call center staff were spending significant time on manual appointment setting because the system could not see external calendar availability.',
-    action:
-      'Built a secure, automated scheduling workflow on the Google Calendar API and Node.js. Implemented OAuth 2.0 for API access and an event-driven design for availability and booking flows.',
-    result:
-      'Cut manual appointment-setting effort for call center staff by 50%, directly improving operational throughput and reducing customer wait times.',
-    projectLink: '#',
-    icon: 'Calendar',
-  },
-  {
-    id: 'riot',
-    title: 'RIOT — Running Is Our Therapy',
-    tools: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'EJS', 'express-validator'],
-    situation:
-      'Distance runners needed a central place to discover, create, and join running meetups (5K, 10K, Half, Full Marathon) and manage their connections.',
-    action:
-      'Built a full-stack meetup-style web app with browse/create/RSVP flows, session-based auth, a "My Connections" dashboard, and input validation. MVC-style Express architecture and reusable validation middleware.',
-    result:
-      'Users can discover events by topic, create meetups with location and date/time, RSVP (Yes/No/Maybe), and manage saved connections in a responsive dark-themed UI.',
-    projectLink: 'https://github.com/sarangspadalkar/RIOT--Running-Is-Our-Therapy-',
-    icon: 'Users',
-  },
-  {
-    id: 'hangman-game',
-    title: 'Hangman Game',
-    tools: ['React 18', 'TypeScript', 'Create React App', 'CSS Modules'],
-    situation:
-      'Wanted a portable, accessible word game runnable in the browser, including for users on keyboards or screen readers.',
-    action:
-      'Built a Hangman game guessing US state and territory names using React 18 and TypeScript. Implemented 6-lives logic, a QWERTY keyboard (click or type), win/lose screens, focus styles, ARIA labels, and optional reduced motion.',
-    result:
-      'A deployable, accessible game with clear feedback (correct letters green, wrong red), an end screen with the answer and "Play again," shipped to GitHub Pages via GitHub Actions.',
-    projectLink: 'https://sarangspadalkar.github.io/hangman-game/',
-    icon: 'Gamepad2',
+    tag: 'Production',
+    description:
+      'Built a secure, automated scheduling workflow on the Google Calendar API and Node.js. Implemented OAuth 2.0 for API access and an event-driven system that reduced manual appointment-setting for call center staff by 50%, directly improving operational throughput.',
+    stack: ['Google Calendar API', 'Node.js', 'OAuth 2.0', 'Event-Driven'],
   },
 ] as const;
 

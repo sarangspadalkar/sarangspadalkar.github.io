@@ -71,6 +71,18 @@ export function ExperienceTimeline() {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
+                {'tags' in job && job.tags && job.tags.length > 0 && (
+                  <ul className="flex flex-wrap gap-2 pt-2">
+                    {job.tags.map((tag) => (
+                      <li
+                        key={tag}
+                        className="inline-block rounded text-xs font-medium bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 px-2.5 py-1"
+                      >
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </CardContent>
             </Card>
           ))}
