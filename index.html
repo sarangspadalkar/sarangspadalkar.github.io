@@ -1,68 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <meta name="description" content="Sarang Padalkar — Senior Software Engineer specializing in event-driven backends, cloud infrastructure, and AI-powered automation." />
+    <title>Sarang Padalkar — Senior Software Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/main.css" />
-    <title>Sarang Padalkar</title>
 </head>
 
-<body id="bg-img">
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item current">
-                    <a href="index.html" class="nav-link"> Home </a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link"> About Me </a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link"> My Work </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                        How To Reach Me
-                    </a>
-                </li>
+<body>
+    <header class="site-header" id="site-header">
+        <div class="container nav">
+            <a href="#top" class="brand">Sarang Padalkar</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
-    <main id="home">
-        <h1 class="lg-heading">
-            Sarang
-            <span class="text-secondary">Padalkar</span>
-        </h1>
-        <div class="icons">
-            <a href="https://www.linkedin.com/in/sarang-padalkar/" target="_blank">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com/sarangspadalkar" target="_blank">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://drive.google.com/file/d/1PFMN-sRr4VckDtygY-8YW2c7YxBhq-yd/view?usp=sharing"
-                target="_blank">
-                <i class="fas fa-cloud-download-alt fa-2x"></i>
-            </a>
-        </div>
+    <main id="top">
+        <section class="hero">
+            <div class="container">
+                <h1>I build backends that scale, automate, and stay secure.</h1>
+                <p class="lead">
+                    Senior software engineer specializing in event-driven backends, cloud infrastructure, and AI-powered automation.
+                </p>
+                <div class="cta-row">
+                    <a class="btn btn-primary" href="#projects">View Projects</a>
+                    <a class="btn btn-outline" href="#contact">Contact Me</a>
+                    <a class="btn btn-ghost" href="https://drive.google.com/file/d/1DgwQbDAIRYH1TZ_FFHmfy7_Mp_b8PJYz/view?usp=sharing" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" x2="12" y1="15" y2="3"/>
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section section-muted">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-bio">
+                        <p>
+                            I'm a senior software engineer based in Dallas, TX, currently at Jill's Office. I've spent the last few years designing event-driven backends, building AI-powered voice automation on LiveKit and OpenAI's Realtime API, and championing infrastructure-as-code across identity, networking, and compute.
+                        </p>
+                        <p>
+                            My work tends to live at the intersection of backend systems, cloud infrastructure, and developer enablement — migrating monoliths to microservices, automating manual ops, and shipping platform features that unlock real product outcomes. I care about clean bounded contexts, secure-by-default systems, and code review cultures that make teams faster.
+                        </p>
+                    </div>
+                    <aside class="about-card">
+                        <div class="meta">
+                            <div class="meta-label">Location</div>
+                            <div class="meta-value">Dallas, TX</div>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-label">Experience</div>
+                            <div class="meta-value">8+ Years</div>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-label">Focus</div>
+                            <div class="meta-value">Backend, Cloud &amp; AI Systems</div>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-label">Current Role</div>
+                            <div class="meta-value">Senior Software Engineer at Jill's Office</div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skill-grid skill-grid-3">
+                    <div class="skill-card">
+                        <h3>Backend</h3>
+                        <ul class="pills">
+                            <li>Node.js</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>GraphQL</li>
+                            <li>RESTful APIs</li>
+                            <li>WebSockets</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Cloud &amp; DevOps</h3>
+                        <ul class="pills">
+                            <li>AWS</li>
+                            <li>GCP</li>
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                            <li>GitHub Actions</li>
+                            <li>AWS CodePipeline</li>
+                            <li>AWS CDK</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Databases</h3>
+                        <ul class="pills">
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>Redis</li>
+                            <li>Prisma</li>
+                            <li>Mongoose</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-grid skill-grid-2">
+                    <div class="skill-card">
+                        <h3>Security &amp; Identity</h3>
+                        <ul class="pills">
+                            <li>OAuth 2.0</li>
+                            <li>AWS Cognito</li>
+                            <li>Federated Identity</li>
+                            <li>Google &amp; Social IdPs</li>
+                            <li>JWT</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools</h3>
+                        <ul class="pills">
+                            <li>OpenAI API (Realtime / GPT-4)</li>
+                            <li>LiveKit (WebRTC)</li>
+                            <li>Twilio</li>
+                            <li>Zapier Platform</li>
+                            <li>AssemblyAI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-muted">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-sub">A track record of shipping full-stack features and cloud infrastructure across enterprise and startup teams.</p>
+                </div>
+                <div class="experience-list">
+                    <article class="exp-card">
+                        <header class="exp-header">
+                            <div>
+                                <h3>Senior Software Engineer</h3>
+                                <a class="exp-company" href="https://www.jillsoffice.com/" target="_blank" rel="noopener">Jill's Office</a>
+                                <span class="exp-location">Ogden, UT</span>
+                            </div>
+                            <span class="exp-date">Jan 2024 — Present</span>
+                        </header>
+                        <ul class="exp-body-list">
+                            <li>Engineered an asynchronous AI voice automation engine using <strong>LiveKit</strong> and <strong>OpenAI's Realtime API</strong>, orchestrating event-driven WebRTC streams to handle high-concurrency voice processing seamlessly.</li>
+                            <li>Migrated 15,000+ legacy user accounts from database-stored credentials to <strong>AWS Cognito</strong>, implementing <strong>OAuth 2.0</strong> and Google SSO via custom REST endpoints to eliminate credential-maintenance security liabilities.</li>
+                            <li>Built an event-driven off-hours dispatch engine on <strong>AWS SQS</strong> and <strong>ECS Fargate</strong> to process multi-tiered SMS/Voice escalation queues — a critical feature that directly unlocked customer acquisition in enterprise HVAC and plumbing markets.</li>
+                            <li>Designed an end-to-end automated transcription pipeline using <strong>Twilio</strong> and <strong>AssemblyAI</strong>, with secure S3 presigned URLs for media transfer, reducing post-call wrap-up times by ~75%.</li>
+                            <li>Decoupled a legacy monolithic core into scalable microservices on <strong>Node.js</strong> and <strong>GraphQL</strong>, defining clear bounded contexts and data-ownership boundaries that drastically isolated blast radiuses and stabilized system reliability.</li>
+                            <li>Championed the organizational adoption of Infrastructure as Code by introducing <strong>AWS CDK (TypeScript)</strong>, automating identity and cloud infrastructure to cut environment provisioning time by 90%.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li>TypeScript</li>
+                            <li>Node.js</li>
+                            <li>GraphQL</li>
+                            <li>LiveKit</li>
+                            <li>OpenAI Realtime API</li>
+                            <li>AWS CDK</li>
+                            <li>AWS Cognito</li>
+                            <li>AWS SQS</li>
+                            <li>ECS Fargate</li>
+                            <li>OAuth 2.0</li>
+                            <li>Twilio</li>
+                            <li>AssemblyAI</li>
+                            <li>Microservices</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card">
+                        <header class="exp-header">
+                            <div>
+                                <h3>Software Developer</h3>
+                                <a class="exp-company" href="https://www.jillsoffice.com/" target="_blank" rel="noopener">Jill's Office</a>
+                                <span class="exp-location">Ogden, UT</span>
+                            </div>
+                            <span class="exp-date">Jun 2021 — Dec 2023</span>
+                        </header>
+                        <ul class="exp-body-list">
+                            <li>Migrated performance-critical backend endpoints from <strong>AWS Lambda</strong> to <strong>ECS Fargate</strong>, eliminating cold-start bottlenecks to slash P99 API latency by ~85% while permanently removing the compute cost of legacy cron-based "warmers."</li>
+                            <li>Established automated CI/CD pipelines on <strong>AWS CodePipeline</strong> and <strong>CodeBuild</strong>, replacing manual local builds with automated Docker image generation and ECR publishing to accelerate release deployment frequency by 40%.</li>
+                            <li>Integrated the <strong>OAuth 2.0 Google Calendar API</strong> into the core platform, enabling call center agents to query real-time external availability and eliminate manual appointment-setting friction.</li>
+                            <li>Contributed to a rigorous code review culture and mentored incoming junior developers on backend system design patterns, secure token handling, and database optimization.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li>Node.js</li>
+                            <li>TypeScript</li>
+                            <li>GraphQL</li>
+                            <li>AWS Lambda</li>
+                            <li>ECS Fargate</li>
+                            <li>Docker</li>
+                            <li>AWS CodePipeline</li>
+                            <li>AWS CodeBuild</li>
+                            <li>OAuth 2.0</li>
+                            <li>Google Calendar API</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card">
+                        <header class="exp-header">
+                            <div>
+                                <h3>Jr. Full Stack Developer Intern</h3>
+                                <a class="exp-company" href="https://www.discoveryeducation.com/" target="_blank" rel="noopener">Discovery Education</a>
+                                <span class="exp-location">Charlotte, NC</span>
+                            </div>
+                            <span class="exp-date">Jul 2020 — Aug 2020</span>
+                        </header>
+                        <ul class="exp-body-list">
+                            <li>Developed a full-stack <strong>MEAN</strong> web application that processed and rendered data visually for internal stakeholders.</li>
+                            <li>Designed interactive web pages on <strong>Angular</strong> for an internal application.</li>
+                            <li>Built RESTful API endpoints using <strong>Node.js</strong> and <strong>Azure Functions</strong>.</li>
+                            <li>Integrated third-party APIs to track and maintain licenses across the inventory management system.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li>Angular</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Azure Functions</li>
+                            <li>REST APIs</li>
+                            <li>MEAN Stack</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card">
+                        <header class="exp-header">
+                            <div>
+                                <h3>Cloud Architect</h3>
+                                <a class="exp-company" href="https://www.accenture.com/in-en" target="_blank" rel="noopener">Accenture Solutions Pvt. Ltd.</a>
+                                <span class="exp-location">Pune, India</span>
+                            </div>
+                            <span class="exp-date">Nov 2016 — Jun 2019</span>
+                        </header>
+                        <ul class="exp-body-list">
+                            <li>Designed, implemented, and maintained all <strong>AWS</strong> infrastructure and services within a managed-service environment.</li>
+                            <li>Instituted <strong>Infrastructure as Code</strong>, security automation, and automation of routine maintenance tasks.</li>
+                            <li>Deployed <strong>Spacewalk</strong> to centrally patch all Linux EC2 instances across the AWS infrastructure.</li>
+                            <li>Used Linux scripting to automate manual operational work, saving the team 30 hours of daily effort — recognized with the <strong>CMT APEX Award</strong> for Delivery &amp; Profitability.</li>
+                        </ul>
+                        <ul class="exp-tags">
+                            <li>AWS</li>
+                            <li>EC2</li>
+                            <li>Infrastructure as Code</li>
+                            <li>Security Automation</li>
+                            <li>Spacewalk</li>
+                            <li>Linux</li>
+                            <li>Shell Scripting</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-sub">A selection of side projects and coursework I've shipped.</p>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <header class="project-header">
+                            <h3>AI-Driven Call Automation Engine</h3>
+                            <span class="tag">Production</span>
+                        </header>
+                        <p>Integrated the OpenAI Realtime API for intelligent, low-latency handling of customer calls. Built the underlying infrastructure on AWS CDK and LiveKit to manage real-time WebRTC audio streams, ensuring high-concurrency voice processing with extreme responsiveness.</p>
+                        <p class="stack">OpenAI Realtime API &nbsp;•&nbsp; LiveKit &nbsp;•&nbsp; AWS CDK &nbsp;•&nbsp; WebRTC &nbsp;•&nbsp; TypeScript</p>
+                    </article>
+                    <article class="project-card">
+                        <header class="project-header">
+                            <h3>Federated Identity &amp; Google Auth Integration</h3>
+                            <span class="tag">Production</span>
+                        </header>
+                        <p>Architected a robust Identity Provider system using AWS Cognito and CDK, implementing Federated Identity for "Sign in with Google." Engineered the OAuth 2.0 Authorization Code Flow with JWT validation (issuer/audience checks) and secure, cross-domain HTTP-only cookie strategies.</p>
+                        <p class="stack">AWS Cognito &nbsp;•&nbsp; AWS CDK &nbsp;•&nbsp; OAuth 2.0 &nbsp;•&nbsp; JWT &nbsp;•&nbsp; Federated Identity</p>
+                    </article>
+                    <article class="project-card">
+                        <header class="project-header">
+                            <h3>Enterprise Zapier &amp; Workflow Automation</h3>
+                            <span class="tag">Platform</span>
+                        </header>
+                        <p>Designed a custom Zapier Platform integration from scratch in TypeScript using REST hooks. Built secure OAuth 2.0 flows for third-party authorization, custom Actions for triggering outbound calls, and Triggers for real-time data sync between the core backend and external CRMs.</p>
+                        <p class="stack">Zapier Platform &nbsp;•&nbsp; TypeScript &nbsp;•&nbsp; REST Hooks &nbsp;•&nbsp; OAuth 2.0</p>
+                    </article>
+                    <article class="project-card">
+                        <header class="project-header">
+                            <h3>Automated Scheduling System</h3>
+                            <span class="tag">Production</span>
+                        </header>
+                        <p>Built a secure, automated scheduling workflow on Google Calendar API and Node.js. Implemented OAuth 2.0 for API access and created an event-driven system that reduced manual appointment-setting for call center staff by 50%, directly improving operational throughput.</p>
+                        <p class="stack">Google Calendar API &nbsp;•&nbsp; Node.js &nbsp;•&nbsp; OAuth 2.0 &nbsp;•&nbsp; Event-Driven</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-muted">
+            <div class="container">
+                <div class="section-head center">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-sub">Interested in working together, or just want to chat about chess? Reach out.</p>
+                </div>
+                <div class="contact-grid">
+                    <a class="contact-card" href="mailto:jobs.padalkar.sarang@gmail.com">
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </span>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">jobs.padalkar.sarang@gmail.com</span>
+                    </a>
+                    <a class="contact-card" href="https://github.com/sarangspadalkar" target="_blank" rel="noopener">
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </span>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/sarangspadalkar</span>
+                    </a>
+                    <a class="contact-card" href="https://www.linkedin.com/in/sarang-padalkar/" target="_blank" rel="noopener">
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </span>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/sarang-padalkar</span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-name">Sarang Padalkar — Senior Software Engineer</div>
+            <ul class="footer-links">
+                <li><a href="https://github.com/sarangspadalkar" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/sarang-padalkar/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://www.chess.com/member/nimbus_oblivate" target="_blank" rel="noopener">Chess.com</a></li>
+            </ul>
+            <div class="footer-copy">© 2026 Sarang Padalkar. Built with care.</div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
-
 </html>

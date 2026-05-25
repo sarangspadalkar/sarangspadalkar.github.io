@@ -1,0 +1,2104 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Portfolio Page",
+      "clip": true,
+      "width": 1440,
+      "height": 4800,
+      "fill": "$bg-white",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "tvxH6",
+          "name": "Top Sections",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Gj9je",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "a0sNBg",
+                  "width": "fill_container",
+                  "fill": "$bg-white",
+                  "padding": [
+                    20,
+                    160
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PtHBH",
+                      "fill": "$text-primary",
+                      "content": "Alex Chen",
+                      "fontFamily": "$font-main",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "l793O",
+                      "gap": 32,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pnsBL",
+                          "fill": "$text-secondary",
+                          "content": "About",
+                          "fontFamily": "$font-main",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "E2T9su",
+                          "fill": "$text-secondary",
+                          "content": "Skills",
+                          "fontFamily": "$font-main",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "eXFQ6",
+                          "fill": "$text-secondary",
+                          "content": "Experience",
+                          "fontFamily": "$font-main",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ly7BA",
+                          "fill": "$text-secondary",
+                          "content": "Projects",
+                          "fontFamily": "$font-main",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gefyO",
+                          "fill": "$text-secondary",
+                          "content": "Contact",
+                          "fontFamily": "$font-main",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gXh38",
+                  "width": "fill_container",
+                  "fill": "$bg-white",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": [
+                    80,
+                    160
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jimZ1",
+                      "fill": "$text-primary",
+                      "content": "I build systems that scale.",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 56,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "x8BDw",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "Building scalable, reliable systems that power millions of users",
+                      "fontFamily": "$font-main",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HnDNL",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "p1rNcA",
+                          "fill": "$accent",
+                          "cornerRadius": 8,
+                          "padding": [
+                            14,
+                            28
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VLfz2",
+                              "fill": "#FFFFFF",
+                              "content": "View Projects",
+                              "fontFamily": "$font-main",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "C0pbPZ",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 2,
+                            "fill": "$accent"
+                          },
+                          "padding": [
+                            14,
+                            28
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "x0B4B",
+                              "fill": "$accent",
+                              "content": "Contact Me",
+                              "fontFamily": "$font-main",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Qd7MN",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 2,
+                            "fill": "$text-secondary"
+                          },
+                          "gap": 8,
+                          "padding": [
+                            14,
+                            28
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "JuaoA",
+                              "width": 18,
+                              "height": 18,
+                              "iconFontName": "download",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-secondary"
+                            },
+                            {
+                              "type": "text",
+                              "id": "MxWGN",
+                              "fill": "$text-secondary",
+                              "content": "Download Resume",
+                              "fontFamily": "$font-main",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cUkc9",
+              "width": "fill_container",
+              "fill": "$bg-light",
+              "layout": "vertical",
+              "gap": 48,
+              "padding": [
+                80,
+                160
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mTSp0",
+                  "fill": "$text-primary",
+                  "content": "About Me",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "aE11J",
+                  "width": "fill_container",
+                  "gap": 48,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "E5pGlH",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MFsAw",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "With over 8 years of experience in software engineering, I specialize in designing and building distributed systems, microservices architectures, and high-performance APIs that serve millions of requests daily.",
+                          "lineHeight": 1.7,
+                          "fontFamily": "$font-main",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "DP36G",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "I'm passionate about clean architecture, performance optimization, and mentoring engineering teams. I believe great backend systems are invisible — they just work, reliably and at scale.",
+                          "lineHeight": 1.7,
+                          "fontFamily": "$font-main",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VVpBP",
+                      "width": "fill_container",
+                      "fill": "$bg-white",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-color"
+                      },
+                      "layout": "vertical",
+                      "gap": 24,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "zk3FN",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "A83Shi",
+                              "fill": "$text-muted",
+                              "content": "Location",
+                              "fontFamily": "$font-main",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                              "letterSpacing": 0.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "Dqfmv",
+                              "fill": "$text-primary",
+                              "content": "San Francisco, CA",
+                              "fontFamily": "$font-main",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "filsv",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "oYLZW",
+                              "fill": "$text-muted",
+                              "content": "Experience",
+                              "fontFamily": "$font-main",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                              "letterSpacing": 0.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "V8EhJ6",
+                              "fill": "$text-primary",
+                              "content": "8+ Years",
+                              "fontFamily": "$font-main",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "sDjYM",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SnWmQ",
+                              "fill": "$text-muted",
+                              "content": "Specialization",
+                              "fontFamily": "$font-main",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                              "letterSpacing": 0.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "v9hlha",
+                              "fill": "$text-primary",
+                              "content": "Distributed Systems",
+                              "fontFamily": "$font-main",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "FF9eQ",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xswnF",
+                              "fill": "$text-muted",
+                              "content": "Current Role",
+                              "fontFamily": "$font-main",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                              "letterSpacing": 0.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "b0Cwd",
+                              "fill": "$text-primary",
+                              "content": "Staff Engineer at TechCorp",
+                              "fontFamily": "$font-main",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rLB3H",
+              "width": "fill_container",
+              "fill": "$bg-white",
+              "layout": "vertical",
+              "gap": 48,
+              "padding": [
+                80,
+                160
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "yRgp0",
+                  "fill": "$text-primary",
+                  "content": "Technical Skills",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "QSnT3",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Lwkps",
+                      "width": "fill_container",
+                      "fill": "$bg-light",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-color"
+                      },
+                      "layout": "vertical",
+                      "gap": 20,
+                      "padding": 28,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Qdd2j",
+                          "fill": "$text-primary",
+                          "content": "Languages",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "q7mDH",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "VM9CG",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ZXGmt",
+                                  "fill": "$text-primary",
+                                  "content": "Go",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "pn3eV",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "TkDFe",
+                                  "fill": "$text-primary",
+                                  "content": "Python",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "WOLwY",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "rh6t2",
+                                  "fill": "$text-primary",
+                                  "content": "Java",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ZJzef",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ZNQ6Q",
+                                  "fill": "$text-primary",
+                                  "content": "Rust",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nZckX",
+                      "width": "fill_container",
+                      "fill": "$bg-light",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-color"
+                      },
+                      "layout": "vertical",
+                      "gap": 20,
+                      "padding": 28,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yQRqj",
+                          "fill": "$text-primary",
+                          "content": "Frameworks",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "txrnK",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "epZ8M",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "xb8XD",
+                                  "fill": "$text-primary",
+                                  "content": "gRPC",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "cCTTJ",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "XNcZd",
+                                  "fill": "$text-primary",
+                                  "content": "FastAPI",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "RJ7DY",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "PoUTH",
+                                  "fill": "$text-primary",
+                                  "content": "Spring Boot",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "nYyFI",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "tcU69",
+                                  "fill": "$text-primary",
+                                  "content": "Gin",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sC7wB",
+                      "width": "fill_container",
+                      "fill": "$bg-light",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-color"
+                      },
+                      "layout": "vertical",
+                      "gap": 20,
+                      "padding": 28,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "j2B6E2",
+                          "fill": "$text-primary",
+                          "content": "Databases",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "KgSDU",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "ggx1I",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "oiOJJ",
+                                  "fill": "$text-primary",
+                                  "content": "PostgreSQL",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "whzA2",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "a9YoYQ",
+                                  "fill": "$text-primary",
+                                  "content": "Redis",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "B0F0h9",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "M5bssm",
+                                  "fill": "$text-primary",
+                                  "content": "MongoDB",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Vb9IN",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "yM7yN",
+                                  "fill": "$text-primary",
+                                  "content": "Cassandra",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xcMmT",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "S4bPEo",
+                      "width": 400,
+                      "fill": "$bg-light",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-color"
+                      },
+                      "layout": "vertical",
+                      "gap": 20,
+                      "padding": 28,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n00RZP",
+                          "fill": "$text-primary",
+                          "content": "Infrastructure",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "TqpOb",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "flANf",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "zFEI2",
+                                  "fill": "$text-primary",
+                                  "content": "Kubernetes",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Va4NZ",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "LafZ3",
+                                  "fill": "$text-primary",
+                                  "content": "Docker",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "oLv8M",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "YbZJT",
+                                  "fill": "$text-primary",
+                                  "content": "Terraform",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "qjMlc",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Sjava",
+                                  "fill": "$text-primary",
+                                  "content": "AWS",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "H8M2KU",
+                      "width": 400,
+                      "fill": "$bg-light",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-color"
+                      },
+                      "layout": "vertical",
+                      "gap": 20,
+                      "padding": 28,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JTJ0T",
+                          "fill": "$text-primary",
+                          "content": "Practices",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "M1pNb",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "KOGPz",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "XuTrI",
+                                  "fill": "$text-primary",
+                                  "content": "CI/CD",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "r4qzPW",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "gjvfJ",
+                                  "fill": "$text-primary",
+                                  "content": "TDD",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "K2hyV",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "iE0WX",
+                                  "fill": "$text-primary",
+                                  "content": "System Design",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "nJokU",
+                              "fill": "$bg-white",
+                              "cornerRadius": 6,
+                              "padding": [
+                                8,
+                                16
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "IRQgu",
+                                  "fill": "$text-primary",
+                                  "content": "Code Review",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 14,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "OireG",
+          "name": "Bottom Sections",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "jZ2dh",
+              "name": "Experience Section",
+              "width": "fill_container",
+              "fill": "$bg-white",
+              "layout": "vertical",
+              "gap": 48,
+              "padding": [
+                80,
+                160
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xWhzI",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MN5wP",
+                      "fill": "$text-primary",
+                      "content": "Work Experience",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 36,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "e21DHr",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A track record of building and scaling backend systems at top companies.",
+                      "fontFamily": "$font-main",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SqZtO",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nRQlJ",
+                      "width": "fill_container",
+                      "fill": "$bg-light",
+                      "cornerRadius": 8,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "DT2Us",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "VtDDO",
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "iPFUw",
+                                  "fill": "$text-primary",
+                                  "content": "Staff Engineer",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 20,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "zrZRs",
+                                  "fill": "$accent",
+                                  "content": "TechCorp",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 16,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "gH0Te",
+                              "fill": "$text-muted",
+                              "content": "2021 – Present",
+                              "fontFamily": "$font-main",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "a45Ma",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Leading the platform team responsible for core API infrastructure serving 50M+ requests/day. Architected migration from monolith to microservices, reducing deployment time by 80%. Mentoring a team of 6 engineers.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-main",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VIiW3",
+                      "width": "fill_container",
+                      "fill": "$bg-light",
+                      "cornerRadius": 8,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "iO9kY",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "q685lU",
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "a70ZEF",
+                                  "fill": "$text-primary",
+                                  "content": "Senior Backend Engineer",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 20,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "z4YVh7",
+                                  "fill": "$accent",
+                                  "content": "DataFlow Inc.",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 16,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "XFepX",
+                              "fill": "$text-muted",
+                              "content": "2018 – 2021",
+                              "fontFamily": "$font-main",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "rkoCJ",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Designed and built real-time data pipeline processing 2TB/day. Implemented event-driven architecture using Kafka and Go. Reduced infrastructure costs by 40% through performance optimization.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-main",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Kujoq",
+                      "width": "fill_container",
+                      "fill": "$bg-light",
+                      "cornerRadius": 8,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "eZkKL",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "gDgMD",
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "tQ9o7",
+                                  "fill": "$text-primary",
+                                  "content": "Backend Engineer",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 20,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "FuHTq",
+                                  "fill": "$accent",
+                                  "content": "CloudBase",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 16,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "THm7W",
+                              "fill": "$text-muted",
+                              "content": "2015 – 2018",
+                              "fontFamily": "$font-main",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "MXwrl",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Built RESTful APIs and microservices for a SaaS platform with 100K+ users. Introduced CI/CD pipelines and automated testing, improving release velocity by 3x.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-main",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sl8sE",
+                      "width": "fill_container",
+                      "fill": "$bg-light",
+                      "cornerRadius": 8,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tTSyJ",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "axwY7",
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "tdYUo",
+                                  "fill": "$text-primary",
+                                  "content": "Junior Developer",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 20,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "gf1tk",
+                                  "fill": "$accent",
+                                  "content": "StartupLab",
+                                  "fontFamily": "$font-main",
+                                  "fontSize": 16,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "leSWG",
+                              "fill": "$text-muted",
+                              "content": "2013 – 2015",
+                              "fontFamily": "$font-main",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "iLFpx",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Full-stack development on an early-stage product. Built authentication system, payment integration, and internal tooling using Python and PostgreSQL.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-main",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BpI5r",
+              "name": "Projects Section",
+              "width": "fill_container",
+              "fill": "$bg-light",
+              "layout": "vertical",
+              "gap": 48,
+              "padding": [
+                80,
+                160
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bsG96",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r7r3x",
+                      "fill": "$text-primary",
+                      "content": "Featured Projects",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 36,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ARkQf",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Open source and production systems I've built or contributed to.",
+                      "fontFamily": "$font-main",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bXrBS",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NybR4",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "PEMrQ",
+                          "width": "fill_container",
+                          "fill": "$bg-white",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border-color"
+                          },
+                          "layout": "vertical",
+                          "gap": 16,
+                          "padding": 28,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "iMWFO",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "b6KJ5Q",
+                                  "fill": "$text-primary",
+                                  "content": "GoQueue",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 20,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "K3KEs4",
+                                  "fill": "$accent-light",
+                                  "cornerRadius": 12,
+                                  "padding": [
+                                    4,
+                                    12
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "JzDNt",
+                                      "fill": "$accent",
+                                      "content": "Open Source",
+                                      "fontFamily": "$font-main",
+                                      "fontSize": 12,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "eJW9i",
+                              "fill": "$text-secondary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A high-performance distributed task queue written in Go. Supports priority scheduling, dead-letter queues, and horizontal scaling. Used in production by 200+ companies.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$font-main",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "U02T17",
+                              "fill": "$text-muted",
+                              "content": "Go  •  Redis  •  gRPC  •  Protobuf",
+                              "fontFamily": "$font-main",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "s3xXN",
+                          "width": "fill_container",
+                          "fill": "$bg-white",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border-color"
+                          },
+                          "layout": "vertical",
+                          "gap": 16,
+                          "padding": 28,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "uso8i",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "cy22p",
+                                  "fill": "$text-primary",
+                                  "content": "DataStream",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 20,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "pCMVN",
+                                  "fill": "$accent-light",
+                                  "cornerRadius": 12,
+                                  "padding": [
+                                    4,
+                                    12
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "Z9SAPX",
+                                      "fill": "$accent",
+                                      "content": "Production",
+                                      "fontFamily": "$font-main",
+                                      "fontSize": 12,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "zSVlD",
+                              "fill": "$text-secondary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Real-time ETL pipeline framework processing 2TB/day with exactly-once semantics. Features auto-scaling, schema evolution support, and comprehensive monitoring.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$font-main",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "pdHeQ",
+                              "fill": "$text-muted",
+                              "content": "Python  •  Apache Kafka  •  PostgreSQL  •  Docker",
+                              "fontFamily": "$font-main",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JoGfS",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "PKENV",
+                          "width": "fill_container",
+                          "fill": "$bg-white",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border-color"
+                          },
+                          "layout": "vertical",
+                          "gap": 16,
+                          "padding": 28,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "a7ZfZU",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "uRHvf",
+                                  "fill": "$text-primary",
+                                  "content": "AuthVault",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 20,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "RFokN",
+                                  "fill": "$accent-light",
+                                  "cornerRadius": 12,
+                                  "padding": [
+                                    4,
+                                    12
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "faUH7",
+                                      "fill": "$accent",
+                                      "content": "Open Source",
+                                      "fontFamily": "$font-main",
+                                      "fontSize": 12,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "olHS3",
+                              "fill": "$text-secondary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Zero-trust authentication and authorization service with OAuth2, OIDC, and RBAC. Designed for microservice architectures with sub-millisecond token validation.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$font-main",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "nFe5V",
+                              "fill": "$text-muted",
+                              "content": "Rust  •  JWT  •  PostgreSQL  •  Kubernetes",
+                              "fontFamily": "$font-main",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "XOiit",
+                          "width": "fill_container",
+                          "fill": "$bg-white",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border-color"
+                          },
+                          "layout": "vertical",
+                          "gap": 16,
+                          "padding": 28,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "kzsAc",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "MLvdF",
+                                  "fill": "$text-primary",
+                                  "content": "MetricsHub",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 20,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "WGZPO",
+                                  "fill": "$accent-light",
+                                  "cornerRadius": 12,
+                                  "padding": [
+                                    4,
+                                    12
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "L6utxP",
+                                      "fill": "$accent",
+                                      "content": "Internal Tool",
+                                      "fontFamily": "$font-main",
+                                      "fontSize": 12,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "Y81l1",
+                              "fill": "$text-secondary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Centralized observability platform aggregating logs, metrics, and traces from 150+ microservices. Custom dashboards and alerting with PagerDuty integration.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$font-main",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "V2bBM7",
+                              "fill": "$text-muted",
+                              "content": "Go  •  Prometheus  •  Grafana  •  ClickHouse",
+                              "fontFamily": "$font-main",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PrCiA",
+              "name": "Contact Section",
+              "width": "fill_container",
+              "fill": "$bg-white",
+              "layout": "vertical",
+              "gap": 48,
+              "padding": [
+                80,
+                160
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "YBujq",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "og1C2",
+                      "fill": "$text-primary",
+                      "content": "Get In Touch",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 36,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sSmFD",
+                      "fill": "$text-secondary",
+                      "content": "Interested in working together? Feel free to reach out.",
+                      "fontFamily": "$font-main",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "prbLP",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "V9XDT1",
+                      "width": 320,
+                      "fill": "$bg-light",
+                      "cornerRadius": 8,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 32,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "eht9U",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "$accent-light",
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "jPxUY",
+                              "width": 22,
+                              "height": 22,
+                              "iconFontName": "mail",
+                              "iconFontFamily": "lucide",
+                              "fill": "$accent"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "riD9B",
+                          "fill": "$text-primary",
+                          "content": "Email",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HWvPc",
+                          "fill": "$accent",
+                          "content": "alex.chen@email.com",
+                          "fontFamily": "$font-main",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JG8O3",
+                      "width": 320,
+                      "fill": "$bg-light",
+                      "cornerRadius": 8,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 32,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "S6i7cB",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "$accent-light",
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "guEXd",
+                              "width": 22,
+                              "height": 22,
+                              "iconFontName": "github",
+                              "iconFontFamily": "lucide",
+                              "fill": "$accent"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "koH7p",
+                          "fill": "$text-primary",
+                          "content": "GitHub",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "e0UDOp",
+                          "fill": "$accent",
+                          "content": "github.com/alexchen",
+                          "fontFamily": "$font-main",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q2ECR",
+                      "width": 320,
+                      "fill": "$bg-light",
+                      "cornerRadius": 8,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 32,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ieAIZ",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "$accent-light",
+                          "cornerRadius": 24,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "TZ2fv",
+                              "width": 22,
+                              "height": 22,
+                              "iconFontName": "linkedin",
+                              "iconFontFamily": "lucide",
+                              "fill": "$accent"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "TSZtF",
+                          "fill": "$text-primary",
+                          "content": "LinkedIn",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cCFLT",
+                          "fill": "$accent",
+                          "content": "linkedin.com/in/alexchen",
+                          "fontFamily": "$font-main",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "baGry",
+              "name": "Footer",
+              "width": "fill_container",
+              "fill": "#1A1A2E",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                40,
+                160
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zo3m8",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "Alex Chen — Senior Backend Engineer",
+                  "fontFamily": "$font-main",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "olVyy",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uHDJa",
+                      "opacity": 0.5,
+                      "fill": "#FFFFFF",
+                      "content": "GitHub",
+                      "fontFamily": "$font-main",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "h7lR2",
+                      "opacity": 0.5,
+                      "fill": "#FFFFFF",
+                      "content": "LinkedIn",
+                      "fontFamily": "$font-main",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wtTmz",
+                      "opacity": 0.5,
+                      "fill": "#FFFFFF",
+                      "content": "Twitter",
+                      "fontFamily": "$font-main",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wXU5Q",
+                      "opacity": 0.5,
+                      "fill": "#FFFFFF",
+                      "content": "Blog",
+                      "fontFamily": "$font-main",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "mKqpC",
+                  "opacity": 0.35,
+                  "fill": "#FFFFFF",
+                  "content": "© 2026 Alex Chen. Built with care.",
+                  "fontFamily": "$font-main",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": "#2563EB"
+    },
+    "accent-light": {
+      "type": "color",
+      "value": "#EFF6FF"
+    },
+    "bg-light": {
+      "type": "color",
+      "value": "#F7F8FA"
+    },
+    "bg-white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "border-color": {
+      "type": "color",
+      "value": "#E5E7EB"
+    },
+    "font-heading": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font-main": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#8E8EA0"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#1A1A2E"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#5A5A78"
+    }
+  }
+}
